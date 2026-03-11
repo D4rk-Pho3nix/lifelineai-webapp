@@ -41,7 +41,6 @@ export default function ChatPage() {
   const [isAppointmentModalOpen, setIsAppointmentModalOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [showScrollTop, setShowScrollTop] = useState(false)
-  const [sessionResolved, setSessionResolved] = useState(false)
   const messagesContainerRef = useRef<HTMLDivElement | null>(null)
   const topOfChatRef = useRef<HTMLDivElement | null>(null)
 
@@ -236,20 +235,25 @@ export default function ChatPage() {
   useEffect(() => {
     const savedSessions = localStorage.getItem("chat-sessions")
     if (savedSessions) {
-      const parsedSessions = JSON.parse(savedSessions).map((session: any) => ({
-        ...session,
-        createdAt: new Date(session.createdAt),
-        updatedAt: new Date(session.updatedAt),
-        messages: session.messages.map((msg: any) => ({
-          ...msg,
-          timestamp: new Date(msg.timestamp),
-        })),
-      }))
-      setSessions(parsedSessions)
+      try {
+        const parsedSessions = JSON.parse(savedSessions).map((session: any) => ({
+          ...session,
+          createdAt: new Date(session.createdAt),
+          updatedAt: new Date(session.updatedAt),
+          messages: session.messages.map((msg: any) => ({
+            ...msg,
+            timestamp: new Date(msg.timestamp),
+          })),
+        }))
+        setSessions(parsedSessions)
 
-      // Set the most recent session as current
-      if (parsedSessions.length > 0) {
-        setCurrentSessionId(parsedSessions[0].id)
+        // Set the most recent session as current
+        if (parsedSessions.length > 0) {
+          setCurrentSessionId(parsedSessions[0].id)
+        }
+      } catch (error) {
+        console.error("Failed to parse stored sessions:", error)
+        localStorage.removeItem("chat-sessions")
       }
     }
   }, [])
@@ -301,21 +305,10 @@ export default function ChatPage() {
   }, [sessions])
 
   useEffect(() => {
-    if (status === "unauthenticated" && sessionResolved) {
+    if (status === "unauthenticated") {
       router.push("/login")
     }
-  }, [status, router, sessionResolved])
-
-  // Fix infinite loading with safe timeout fallback
-  useEffect(() => {
-    if (status !== "loading") {
-      setSessionResolved(true)
-    }
-    const timer = setTimeout(() => {
-      setSessionResolved(true)
-    }, 3000)
-    return () => clearTimeout(timer)
-  }, [status])
+  }, [status, router])
 
   // Track scroll (window and/or ScrollArea viewport) to toggle Scroll-to-Top button
   useEffect(() => {
@@ -356,11 +349,17 @@ export default function ChatPage() {
     }
   }, [sessions, currentSessionId, isLoading])
 
-  if (status === "loading" && !sessionResolved) {
-    return <div>Loading application...</div> 
+  if (status === "loading") {
+    // Show a much cleaner, styled loading state that matches the theme instead of plain HTML text
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen bg-background">
+         <div className="w-8 h-8 flex items-center justify-center rounded-full border-4 border-primary border-t-transparent animate-spin mb-4" />
+         <p className="text-muted-foreground text-sm font-medium animate-pulse">Loading application...</p>
+      </div>
+    )
   }
 
-  if (status === "unauthenticated" && !session) {
+  if (status === "unauthenticated" || !session) {
     return null // Will be redirected by useEffect
   }
 

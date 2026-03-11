@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { User, Bot, Volume2, VolumeX } from "lucide-react"
 import type { Message } from "@/app/page"
@@ -14,6 +14,28 @@ export function ChatMessage({ message }: ChatMessageProps) {
   const [isSpeaking, setIsSpeaking] = useState(false)
   const [audioError, setAudioError] = useState(false)
   const [isAudioLoading, setIsAudioLoading] = useState(false)
+
+  // Pre-load voices to fix empty voices bug in Chrome/Edge.
+  useEffect(() => {
+    if (typeof window !== "undefined" && "speechSynthesis" in window) {
+      window.speechSynthesis.getVoices()
+      const updateVoices = () => window.speechSynthesis.getVoices()
+      window.speechSynthesis.addEventListener('voiceschanged', updateVoices)
+      
+      return () => {
+        window.speechSynthesis.removeEventListener('voiceschanged', updateVoices)
+      }
+    }
+  }, [])
+
+  // Cancel speech unmount to prevent ghost voices playing in background
+  useEffect(() => {
+    return () => {
+      if (isSpeaking && typeof window !== "undefined" && "speechSynthesis" in window) {
+        window.speechSynthesis.cancel()
+      }
+    }
+  }, [isSpeaking])
 
   const convertHtmlToPlainText = (input: string): string => {
     if (!input) return ""
@@ -94,33 +116,52 @@ export function ChatMessage({ message }: ChatMessageProps) {
       window.speechSynthesis.cancel()
       setIsSpeaking(false)
     } else {
+      // ALWAYS stop any existing speech before starting new to prevent overlaps
+      window.speechSynthesis.cancel()
+      
       // Start new speech
       const utterance = new SpeechSynthesisUtterance(plainTextContent)
       
       // Aim for a female, warm, supportive, and calm voice if available in the browser
       const voices = window.speechSynthesis.getVoices()
-      const femaleVoices = voices.filter(v => 
-        v.name.includes("Female") || 
-        v.name.includes("Samantha") || 
-        v.name.includes("Victoria") ||
-        v.name.includes("Karen") ||
-        v.name.includes("Moira") ||
-        v.name.includes("Tessa") ||
-        v.name.includes("Zira") ||
-        v.name.includes("Fiona") ||
-        v.name.includes("Google UK English Female") ||
-        v.name.includes("Google US English") // Often female by default on many Android/Chrome
-      )
+      
+      // Preferred premium/natural female voices in order of preference
+      const preferredVoices = [
+        "Microsoft Aria Online (Natural) - English (US)", 
+        "Microsoft Jenny Online (Natural) - English (US)", 
+        "Microsoft Sonia Online (Natural) - English (UK)", 
+        "Google US English", // Often a good female voice on Chrome
+        "Google UK English Female", 
+        "Samantha", // Safari Mac
+        "Karen", 
+        "Moira", 
+        "Tessa", 
+        "Victoria",
+        "Zira" // Windows default female
+      ]
+      
+      let selectedVoice = null
+      
+      for (const name of preferredVoices) {
+        const found = voices.find(v => v.name === name || v.name.includes(name))
+        if (found) {
+          selectedVoice = found
+          break
+        }
+      }
+      
+      // Fallback to any voice that explicitly says "Female"
+      if (!selectedVoice) {
+        selectedVoice = voices.find(v => v.name.includes("Female") || v.name.toLowerCase().includes("female"))
+      }
 
-      if (femaleVoices.length > 0) {
-        // Prefer a local voice to avoid delay, or a high-quality known one
-        const preferredVoice = femaleVoices.find(v => v.name.includes("Google UK English Female") || v.name.includes("Samantha")) || femaleVoices[0]
-        utterance.voice = preferredVoice
+      if (selectedVoice) {
+        utterance.voice = selectedVoice
       }
       
       utterance.rate = 0.95  // Slightly slower for a more soothing, calm pacing
       utterance.pitch = 1.05 // Slightly higher pitch often sounds more gentle
-      utterance.volume = 0.8 // Maintain volume
+      utterance.volume = 1.0 // Increased to 1.0 to ensure clarify
 
       utterance.onstart = () => setIsSpeaking(true)
       utterance.onend = () => setIsSpeaking(false)

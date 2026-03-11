@@ -12,35 +12,58 @@ const DiscoverMap = dynamic(
 
 export default function DiscoverPage() {
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number; accuracy: number } | null>(null);
+  const [searchLocation, setSearchLocation] = useState<{ lat: number; lng: number } | null>(null);
+  const [rawPlaces, setRawPlaces] = useState<any[]>([]);
   const [centers, setCenters] = useState<any[]>([]);
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [locationError, setLocationError] = useState<string | null>(null);
 
+  // Helper function to calculate distance in km
+  const getDistanceKm = (lat1: number, lon1: number, lat2: number, lon2: number) => {
+    const R = 6371; // km
+    const dLat = (lat2 - lat1) * (Math.PI / 180);
+    const dLon = (lon2 - lon1) * (Math.PI / 180);
+    const a =
+      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos(lat1 * (Math.PI / 180)) * Math.cos(lat2 * (Math.PI / 180)) *
+      Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c;
+  };
+
   useEffect(() => {
+    let watchId: number;
+
     if (typeof window !== "undefined" && "geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(
+      // Use watchPosition to get the most accurate location over time
+      watchId = navigator.geolocation.watchPosition(
         (position) => {
           const latitude = position.coords.latitude;
           const longitude = position.coords.longitude;
           const accuracy = position.coords.accuracy;
 
-          setUserLocation({
-            lat: latitude,
-            lng: longitude,
-            accuracy: accuracy
-          });
+          setUserLocation({ lat: latitude, lng: longitude, accuracy });
           setLocationError(null);
+
+          // Update searchLocation only if it is null or user has moved more than 2km
+          setSearchLocation((prev) => {
+            if (!prev) return { lat: latitude, lng: longitude };
+            const distance = getDistanceKm(prev.lat, prev.lng, latitude, longitude);
+            if (distance > 2) {
+              return { lat: latitude, lng: longitude };
+            }
+            return prev;
+          });
         },
         (error) => {
           console.error("Location error:", error);
-          alert("Please allow location access to find nearby mental health centers.");
           setLocationError("Please allow location access to find nearby mental health centers.");
           setIsLoading(false);
         },
         {
           enableHighAccuracy: true,
-          timeout: 20000,
+          timeout: 10000,
           maximumAge: 0
         }
       );
@@ -48,26 +71,32 @@ export default function DiscoverPage() {
       setLocationError("Please allow location access to find nearby mental health centers.");
       setIsLoading(false);
     }
+
+    return () => {
+      if (watchId !== undefined && typeof window !== "undefined" && "geolocation" in navigator) {
+        navigator.geolocation.clearWatch(watchId);
+      }
+    };
   }, []);
 
-  // Fetch Nearby Places via Overpass API
+  // Fetch Nearby Places via Overpass API when searchLocation changes
   useEffect(() => {
-    if (!userLocation) return;
+    if (!searchLocation) return;
 
     setIsLoading(true);
 
-    const lat = userLocation.lat;
-    const lng = userLocation.lng;
+    const lat = searchLocation.lat;
+    const lng = searchLocation.lng;
 
-    // Overpass QL to find mental health centers / clinics
+    // Overpass QL to find mental health centers / clinics within 10km radius
     const query = `
       [out:json];
       (
-        node["amenity"="hospital"](around:5000, ${lat}, ${lng});
-        node["amenity"="clinic"](around:5000, ${lat}, ${lng});
-        node["healthcare"="psychiatrist"](around:5000, ${lat}, ${lng});
-        node["healthcare"="psychotherapist"](around:5000, ${lat}, ${lng});
-        node["healthcare"="mental_health"](around:5000, ${lat}, ${lng});
+        node["amenity"="hospital"](around:10000, ${lat}, ${lng});
+        node["amenity"="clinic"](around:10000, ${lat}, ${lng});
+        node["healthcare"="psychiatrist"](around:10000, ${lat}, ${lng});
+        node["healthcare"="psychotherapist"](around:10000, ${lat}, ${lng});
+        node["healthcare"="mental_health"](around:10000, ${lat}, ${lng});
       );
       out body;
     `;
@@ -82,76 +111,81 @@ export default function DiscoverPage() {
         const filtered = data.elements.filter(
           (place: any) => place.tags && place.tags.name
         );
-
-        let results = filtered.map((r: any) => {
-           const lat2 = r.lat;
-           const lon2 = r.lon;
-           
-           // Simple Haversine distance
-           const R = 6371; // km
-           const dLat = (lat2 - lat) * (Math.PI/180);
-           const dLon = (lon2 - lng) * (Math.PI/180); 
-           const a = 
-             Math.sin(dLat/2) * Math.sin(dLat/2) +
-             Math.cos(lat * (Math.PI/180)) * Math.cos(lat2 * (Math.PI/180)) * 
-             Math.sin(dLon/2) * Math.sin(dLon/2); 
-           const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
-           const d = R * c; 
-           
-           const tags = r.tags || {};
-           const name = tags.name || "Mental Health Clinic";
-           const phone =
-             tags.phone ||
-             tags["contact:phone"] ||
-             tags["phone:mobile"] ||
-             "Not Available";
-           
-           const address = [
-             tags["addr:housenumber"],
-             tags["addr:street"],
-             tags["addr:city"],
-             tags["addr:postcode"],
-           ].filter(Boolean).join(", ") || "Address not available";
-
-           return {
-             id: r.id.toString(),
-             place_id: r.id.toString(),
-             name,
-             lat: lat2,
-             lon: lon2,
-             formatted_address: address,
-             vicinity: address,
-             formatted_phone_number: phone,
-             distanceText: `${d.toFixed(1)} km`,
-             distanceValue: d
-           };
-        });
-
-        // Ensure unique results by id
-        const uniqueResultsMap = new Map();
-        results.forEach((r: any) => {
-          if (!uniqueResultsMap.has(r.id)) {
-            uniqueResultsMap.set(r.id, r);
-          }
-        });
-        results = Array.from(uniqueResultsMap.values());
-
-        // Sort by closest distance and limit to 10
-        results = results.sort((a: any, b: any) => a.distanceValue - b.distanceValue).slice(0, 10);
-        setCenters(results);
+        setRawPlaces(filtered);
       } else {
-        setCenters([]);
+        setRawPlaces([]);
       }
     })
     .catch(err => {
       console.error("Error fetching places via Overpass API:", err);
-      setCenters([]);
+      setRawPlaces([]);
     })
     .finally(() => {
       setIsLoading(false);
     });
 
-  }, [userLocation]);
+  }, [searchLocation]);
+
+  // Update center calculations whenever userLocation or rawPlaces change
+  useEffect(() => {
+    if (!userLocation || rawPlaces.length === 0) {
+       // If no places but we finished loading, empty the centers
+       if (!isLoading && rawPlaces.length === 0) {
+         setCenters([]);
+       }
+       return;
+    }
+
+    const { lat, lng } = userLocation;
+
+    let results = rawPlaces.map((r: any) => {
+       const lat2 = r.lat;
+       const lon2 = r.lon;
+       
+       const d = getDistanceKm(lat, lng, lat2, lon2);
+       
+       const tags = r.tags || {};
+       const name = tags.name || "Mental Health Clinic";
+       const phone =
+         tags.phone ||
+         tags["contact:phone"] ||
+         tags["phone:mobile"] ||
+         "Not Available";
+       
+       const address = [
+         tags["addr:housenumber"],
+         tags["addr:street"],
+         tags["addr:city"],
+         tags["addr:postcode"],
+       ].filter(Boolean).join(", ") || "Address not available";
+
+       return {
+         id: r.id.toString(),
+         place_id: r.id.toString(),
+         name,
+         lat: lat2,
+         lon: lon2,
+         formatted_address: address,
+         vicinity: address,
+         formatted_phone_number: phone,
+         distanceText: `${d.toFixed(1)} km`,
+         distanceValue: d
+       };
+    });
+
+    // Ensure unique results by id and rigidly filter everything > 10km
+    const uniqueResultsMap = new Map();
+    results.forEach((r: any) => {
+      if (!uniqueResultsMap.has(r.id) && r.distanceValue <= 10) {
+        uniqueResultsMap.set(r.id, r);
+      }
+    });
+    results = Array.from(uniqueResultsMap.values());
+
+    // Sort by closest distance and limit to 10
+    results = results.sort((a: any, b: any) => a.distanceValue - b.distanceValue).slice(0, 10);
+    setCenters(results);
+  }, [userLocation, rawPlaces, isLoading]);
 
   const handleMarkerClick = useCallback((id: string) => {
     const el = document.getElementById(`center-${id}`);
