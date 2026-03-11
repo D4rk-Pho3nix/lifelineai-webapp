@@ -4,6 +4,8 @@ import { useState, useRef, useEffect } from "react"
 import { Eye, EyeOff, ChevronDown, Loader2 } from "lucide-react"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
+import { auth } from '@/lib/firebase';
+import { RecaptchaVerifier, signInWithPhoneNumber, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 
 export default function LoginPage() {
   const router = useRouter()
@@ -14,6 +16,18 @@ export default function LoginPage() {
   const [showOTP, setShowOTP] = useState(false)
   const [showPasswordCreate, setShowPasswordCreate] = useState(false)
   const [otp, setOtp] = useState(["", "", "", "", "", ""])
+  
+  // Firebase Auth State
+  const [otpSent, setOtpSent] = useState(false);
+  const [otpCode, setOtpCode] = useState('');
+  const [otpDigits, setOtpDigits] = useState(['', '', '', '', '', '']);
+  const [otpShake, setOtpShake] = useState(false);
+  const [otpWrong, setOtpWrong] = useState(false);
+  const [confirmationResult, setConfirmationResult] = useState<any>(null);
+  const [firebaseError, setFirebaseError] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const recaptchaVerifierRef = useRef<any>(null);
+  const otpDigitRefs = [useRef<HTMLInputElement>(null), useRef<HTMLInputElement>(null), useRef<HTMLInputElement>(null), useRef<HTMLInputElement>(null), useRef<HTMLInputElement>(null), useRef<HTMLInputElement>(null)];
   const [isFaculty, setIsFaculty] = useState<boolean | null>(null)
   
   // User Sign Up state
@@ -81,6 +95,31 @@ export default function LoginPage() {
     return () => document.removeEventListener("mousedown", handleClickOutside)
   }, [])
 
+  // Always destroy old container + widget and create a fresh one
+  const createFreshRecaptcha = (): any => {
+    // Clear old verifier
+    if ((window as any).recaptchaVerifier) {
+      try { (window as any).recaptchaVerifier.clear(); } catch {}
+      (window as any).recaptchaVerifier = null;
+    }
+    // Remove old container element from DOM entirely
+    const oldEl = document.getElementById('recaptcha-dynamic-container');
+    if (oldEl) oldEl.remove();
+    // Create a brand-new container
+    const el = document.createElement('div');
+    el.id = 'recaptcha-dynamic-container';
+    el.style.display = 'none';
+    document.body.appendChild(el);
+    // Build fresh verifier
+    const verifier = new RecaptchaVerifier(auth, 'recaptcha-dynamic-container', {
+      size: 'invisible',
+      callback: () => {},
+      'expired-callback': () => {},
+    });
+    (window as any).recaptchaVerifier = verifier;
+    return verifier;
+  };
+
   // Async Real-Time API Search
   useEffect(() => {
     if (!searchTerm || institution === searchTerm) {
@@ -115,13 +154,106 @@ export default function LoginPage() {
     e.preventDefault()
   }
 
+  const handleSignIn = async () => {
+    if (isLoading) return;
+    setIsLoading(true);
+    setFirebaseError('');
+    const fullPhone = '+91' + phoneNumber.replace(/\D/g, '');
+
+    if (!otpSent) {
+      try {
+        const appVerifier = createFreshRecaptcha();
+        const result = await signInWithPhoneNumber(auth, fullPhone, appVerifier);
+        setConfirmationResult(result);
+        setOtpSent(true);
+        setOtpDigits(['', '', '', '', '', '']);
+        setTimeout(() => otpDigitRefs[0]?.current?.focus(), 100);
+      } catch (err: any) {
+        setFirebaseError(err.message || 'Failed to send OTP. Verify your number and try again.');
+      }
+    } else {
+      const entered = otpDigits.join('');
+      try {
+        await confirmationResult.confirm(entered);
+        router.push('/');
+      } catch (err: any) {
+        setOtpWrong(true);
+        setOtpShake(true);
+        setTimeout(() => setOtpShake(false), 600);
+        setFirebaseError('Invalid OTP. Please try again.');
+      }
+    }
+    setIsLoading(false);
+  };
+
+  const handleSignUp = async () => {
+    if (isLoading) return;
+    setIsLoading(true);
+    setFirebaseError('');
+    const fullPhone = '+91' + phoneNumber.replace(/\D/g, '');
+
+    if (!otpSent) {
+      try {
+        const appVerifier = createFreshRecaptcha();
+        const result = await signInWithPhoneNumber(auth, fullPhone, appVerifier);
+        setConfirmationResult(result);
+        setOtpSent(true);
+        setOtpDigits(['', '', '', '', '', '']);
+        setTimeout(() => otpDigitRefs[0]?.current?.focus(), 100);
+      } catch (err: any) {
+        setFirebaseError(err.message || 'Failed to send OTP.');
+      }
+    } else {
+      const entered = otpDigits.join('');
+      try {
+        const userCredential = await confirmationResult.confirm(entered);
+        const user = userCredential.user;
+        router.push('/');
+      } catch (err: any) {
+        setOtpWrong(true);
+        setOtpShake(true);
+        setTimeout(() => setOtpShake(false), 600);
+        setFirebaseError('Invalid OTP. Please try again.');
+      }
+    }
+    setIsLoading(false);
+  };
+
+  const handleAdminSignIn = async () => {
+    if (isLoading) return;
+    setIsLoading(true);
+    setFirebaseError('');
+    const adminEmail = phoneNumber.replace(/\D/g, '') + '@lifeline-admin.com';
+    try {
+      await signInWithEmailAndPassword(auth, adminEmail, password);
+      router.push('/admin-dashboard');
+    } catch (err: any) {
+      setFirebaseError('Invalid credentials. Please try again.');
+    }
+    setIsLoading(false);
+  };
+
+  const handleAdminSignUp = async () => {
+    if (isLoading) return;
+    setIsLoading(true);
+    setFirebaseError('');
+    const adminEmail = phoneNumber.replace(/\D/g, '') + '@lifeline-admin.com';
+    try {
+      await createUserWithEmailAndPassword(auth, adminEmail, password);
+      router.push('/admin-dashboard');
+    } catch (err: any) {
+      setFirebaseError(err.message || 'Sign up failed. Try again.');
+    }
+    setIsLoading(false);
+  };
+
   const handlePreSubmit = () => {
     setValidationError("")
     
     // Login Validation (User & Admin)
     if (authView === "login") {
       if (!phoneNumber) return setValidationError("Phone number is required.")
-      if (!password) return setValidationError("Password is required.")
+      if (authMode === "admin" && !password) return setValidationError("Password is required.")
     }
     
     // User Sign Up Validation
@@ -141,8 +273,14 @@ export default function LoginPage() {
       }
     }
 
-    // If all pass:
-    setShowOTP(true)
+    // Routing to specific handle
+    if (authMode === "user") {
+      if (authView === "login") handleSignIn();
+      else handleSignUp();
+    } else {
+      if (authView === "login") handleAdminSignIn();
+      else handleAdminSignUp();
+    }
   }
 
   const getPasswordStrength = () => {
@@ -160,6 +298,7 @@ export default function LoginPage() {
   const pwdData = getPasswordStrength();
 
   return (
+    <>
     <div className={`min-h-screen grid grid-rows-[auto_1fr] bg-[#1e1e1e] text-white font-sans transition-opacity duration-500 ${isNavigating ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
       <style>{`
         @keyframes modalSlideUp {
@@ -183,7 +322,163 @@ export default function LoginPage() {
         .animate-fast-fade {
           animation: fastFadeIn 0.8s ease-out forwards;
         }
+        @keyframes otpShakeAnim {
+          0%,100% { transform: translateX(0); }
+          15% { transform: translateX(-10px); }
+          30% { transform: translateX(10px); }
+          45% { transform: translateX(-8px); }
+          60% { transform: translateX(8px); }
+          75% { transform: translateX(-4px); }
+          90% { transform: translateX(4px); }
+        }
+        .otp-shake { animation: otpShakeAnim 0.6s ease-out; }
+        @keyframes otpFadeIn {
+          0% { opacity: 0; transform: scale(0.93) translateY(16px); }
+          100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .otp-screen-enter { animation: otpFadeIn 0.45s cubic-bezier(0.2,0.8,0.2,1) forwards; }
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active {
+          -webkit-box-shadow: 0 0 0 60px #1e1e1e inset !important;
+          -webkit-text-fill-color: white !important;
+          caret-color: white !important;
+          transition: background-color 9999s ease-in-out 0s !important;
+        }
       `}</style>
+
+      {/* ─── Full-Screen OTP Verification Screen ─── */}
+      {otpSent && (
+        <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#1e1e1e]">
+          <div className="otp-screen-enter w-full max-w-[420px] px-6 flex flex-col items-center">
+            {/* Icon */}
+            <div className="w-16 h-16 rounded-full bg-[#04895f]/15 flex items-center justify-center mb-6">
+              <svg className="w-8 h-8 text-[#04895f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+            </div>
+
+            {/* Title */}
+            <h1 className="text-[26px] font-bold text-white mb-2 tracking-tight">Verify your number</h1>
+            <p className="text-white/50 text-[14px] text-center mb-8">
+              A 6-digit code was sent to <span className="text-white/80 font-medium">+91 {phoneNumber}</span>
+            </p>
+
+            {/* 6 Digit Inputs */}
+            <div className={`flex gap-3 mb-4 ${otpShake ? 'otp-shake' : ''}`}>
+              {otpDigits.map((digit, idx) => (
+                <input
+                  key={idx}
+                  ref={otpDigitRefs[idx]}
+                  type="text"
+                  inputMode="numeric"
+                  maxLength={1}
+                  value={digit}
+                  className={`w-12 h-14 text-center text-[22px] font-bold rounded-[10px] outline-none transition-all duration-150
+                    ${otpWrong
+                      ? 'bg-red-500/10 border-2 border-red-500 text-red-400'
+                      : digit
+                        ? 'bg-[#2d2d2d] border-2 border-[#04895f] text-white'
+                        : 'bg-[#2d2d2d] border-2 border-white/10 text-white focus:border-[#04895f]'
+                    }`}
+                  onChange={(e) => {
+                    const val = e.target.value.replace(/[^0-9]/g, '').slice(-1);
+                    const newDigits = [...otpDigits];
+                    newDigits[idx] = val;
+                    setOtpDigits(newDigits);
+                    setOtpWrong(false);
+                    setFirebaseError('');
+                    if (val && idx < 5) {
+                      otpDigitRefs[idx + 1]?.current?.focus();
+                    }
+                  }}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Backspace') {
+                      if (!digit && idx > 0) {
+                        const newDigits = [...otpDigits];
+                        newDigits[idx - 1] = '';
+                        setOtpDigits(newDigits);
+                        otpDigitRefs[idx - 1]?.current?.focus();
+                      } else {
+                        const newDigits = [...otpDigits];
+                        newDigits[idx] = '';
+                        setOtpDigits(newDigits);
+                      }
+                    }
+                    if (e.key === 'Enter' && otpDigits.join('').length === 6) {
+                      authMode === 'user' ? (authView === 'login' ? handleSignIn() : handleSignUp()) : handleAdminSignIn();
+                    }
+                  }}
+                  onPaste={(e) => {
+                    const pasted = e.clipboardData.getData('text').replace(/[^0-9]/g, '').slice(0, 6);
+                    if (pasted.length === 6) {
+                      const arr = pasted.split('');
+                      setOtpDigits(arr);
+                      setOtpWrong(false);
+                      otpDigitRefs[5]?.current?.focus();
+                    }
+                    e.preventDefault();
+                  }}
+                />
+              ))}
+            </div>
+
+            {/* Error message */}
+            {(firebaseError || otpWrong) && (
+              <p className="text-red-400 text-[13px] mb-4 text-center animate-fast-fade">
+                {firebaseError || 'Incorrect code. Try again.'}
+              </p>
+            )}
+
+            {/* Verify Button */}
+            <button
+              type="button"
+              disabled={otpDigits.join('').length < 6 || isLoading}
+              onClick={() => authMode === 'user' ? (authView === 'login' ? handleSignIn() : handleSignUp()) : handleAdminSignIn()}
+              className="w-full py-[14px] bg-[#04895f] hover:bg-[#036b4a] transition-colors text-white rounded-[12px] font-semibold text-[15px] disabled:opacity-40 disabled:cursor-not-allowed mb-4 flex items-center justify-center gap-2"
+            >
+              {isLoading ? <><Loader2 className="w-4 h-4 animate-spin" /> Verifying...</> : 'Verify Code'}
+            </button>
+
+            {/* Resend + Back */}
+            <div className="flex items-center gap-4 text-[13px]">
+              <button
+                type="button"
+                disabled={isLoading}
+                onClick={async () => {
+                  setOtpDigits(['', '', '', '', '', '']);
+                  setOtpWrong(false);
+                  setFirebaseError('');
+                  const fullPhone = '+91' + phoneNumber.replace(/\D/g, '');
+                  try {
+                    const appVerifier = createFreshRecaptcha();
+                    const result = await signInWithPhoneNumber(auth, fullPhone, appVerifier);
+                    setConfirmationResult(result);
+                    setOtpSent(true);
+                    setTimeout(() => otpDigitRefs[0]?.current?.focus(), 100);
+                  } catch (err: any) {
+                    setFirebaseError(err.message || 'Failed to resend OTP.');
+                    setOtpSent(true);
+                  }
+                }}
+                className="text-[#04895f] hover:text-white transition-colors font-medium disabled:opacity-40"
+              >
+                Resend OTP
+              </button>
+              <span className="text-white/20">|</span>
+              <button
+                type="button"
+                onClick={() => { setOtpSent(false); setOtpDigits(['','','','','','']); setOtpWrong(false); setFirebaseError(''); }}
+                className="text-white/40 hover:text-white transition-colors"
+              >
+                Change number
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Header */}
       <header className="flex justify-between items-center px-[48px] py-[24px]">
         {/* Logo Section */}
@@ -307,10 +602,11 @@ export default function LoginPage() {
                   </div>
                   <input
                     type="tel"
-                    placeholder="Enter your number"
+                    autoComplete="off"
+                    placeholder={(authView === "user-signup" && otpSent) ? 'Enter 6-digit OTP' : 'Enter your number'}
                     className="flex-1 p-[12px] bg-[#1e1e1e] border border-white/10 text-white placeholder:text-white/30 rounded-[8px] text-[14px] outline-none focus:border-[#04895f] transition-colors"
-                    value={phoneNumber}
-                    onChange={(e) => setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""))}
+                    value={(authView === "user-signup" && otpSent) ? otpCode : phoneNumber}
+                    onChange={(authView === "user-signup" && otpSent) ? (e) => setOtpCode(e.target.value) : (e) => setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""))}
                   />
                 </div>
               </div>
@@ -540,9 +836,11 @@ export default function LoginPage() {
                     <div className="relative flex items-center">
                       <input
                         type={showPassword ? "text" : "password"}
+                        autoComplete="new-password"
                         className="w-full p-[12px] pr-[40px] bg-[#1e1e1e] border border-white/10 text-white rounded-[8px] text-[14px] outline-none focus:border-[#04895f] transition-colors"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
+                        value={(authView === "login" && authMode === "user" && otpSent) ? otpCode : password}
+                        onChange={(authView === "login" && authMode === "user" && otpSent) ? (e) => setOtpCode(e.target.value) : (e) => setPassword(e.target.value)}
+                        placeholder={(authView === "login" && authMode === "user" && otpSent) ? 'Enter 6-digit OTP' : 'Password'}
                       />
                       <button
                         type="button"
@@ -567,17 +865,19 @@ export default function LoginPage() {
               )}
 
               {/* Validation Error Message */}
-              {validationError && (
+              {(validationError || firebaseError) && (
                 <div className="mb-3 text-red-500 text-[13px] font-medium text-center animate-fast-fade">
-                  {validationError}
+                  {validationError || firebaseError}
                 </div>
               )}
 
               {/* Submit Button */}
               <button
                 type="button"
-                className="w-full py-[14px] mt-[12px] bg-[#04895f] hover:bg-[#036b4a] transition-colors text-white rounded-[10px] font-semibold text-[15px] border-none cursor-pointer"
+                id={authMode === "user" ? (authView === "login" ? "sign-in-button" : "sign-up-button") : undefined}
+                className="w-full py-[14px] mt-[12px] bg-[#04895f] hover:bg-[#036b4a] transition-colors text-white rounded-[10px] font-semibold text-[15px] border-none cursor-pointer disabled:opacity-50"
                 onClick={handlePreSubmit}
+                disabled={isLoading}
               >
                 {(authMode === "admin" && authView === "admin-signup") || (authMode === "user" && authView === "user-signup") ? "sign up" : "Sign In"}
               </button>
@@ -675,10 +975,20 @@ export default function LoginPage() {
                 <button
                   type="button"
                   className="w-full py-[12px] bg-[#04895f] text-white rounded-[10px] font-semibold transition-colors hover:bg-[#036b4a] disabled:opacity-50 disabled:cursor-not-allowed"
-                  disabled={!phoneNumber}
-                  onClick={() => {
-                    // MOCK AUTHENTICATION [TODO: SUPABASE INTEGRATION]
-                    setShowOTP(true)
+                  disabled={!phoneNumber || isLoading}
+                  onClick={async () => {
+                    setFirebaseError('');
+                    setIsLoading(true);
+                    const fullPhone = countryCode + phoneNumber.replace(/\D/g, '');
+                    try {
+                      const appVerifier = createFreshRecaptcha();
+                      const result = await signInWithPhoneNumber(auth, fullPhone, appVerifier);
+                      setConfirmationResult(result);
+                      setShowOTP(true);
+                    } catch (err: any) {
+                      setFirebaseError(err.message || 'Failed to send OTP.');
+                    }
+                    setIsLoading(false);
                   }}
                 >
                   Send OTP
@@ -723,43 +1033,32 @@ export default function LoginPage() {
                 <button
                   type="button"
                   className="bg-[#04895f] text-white w-full mt-6 py-3 rounded-lg hover:bg-[#036b4a] transition-colors font-semibold"
-                  onClick={() => {
-                    // MOCK AUTHENTICATION CHECK - [TODO: REMOVE WHEN SUPABASE IS CONNECTED]
-                    if (authMode === "user" && phoneNumber === "979137676798" && password === "welcome123") {
-                      if (otp.join("") === "000000") {
-                        setIsNavigating(true)
-                        localStorage.setItem("mock_logged_in", "true")
-                        setTimeout(() => {
-                          router.push("/")
-                        }, 500)
-                        return
+                  onClick={async () => {
+                    if (!confirmationResult) {
+                      setFirebaseError('Please request OTP first.');
+                      return;
+                    }
+                    setIsLoading(true);
+                    setFirebaseError('');
+                    const enteredOtp = otp.join('');
+                    try {
+                      await confirmationResult.confirm(enteredOtp);
+                      // OTP verified — decide next screen
+                      if (authMode === 'admin' && authView === 'admin-signup') {
+                        setShowPasswordCreate(true);
+                      } else if (authMode === 'user' && authView === 'user-signup') {
+                        setShowPasswordCreate(true);
+                      } else if (showForgotPassword) {
+                        setShowPasswordCreate(true);
                       } else {
-                        alert("Invalid mock OTP. Try 000000.")
-                        return
+                        // Login confirmed — redirect
+                        setIsNavigating(true);
+                        router.push('/');
                       }
+                    } catch (err: any) {
+                      setFirebaseError('Invalid OTP. Please check the code and try again.');
                     }
-
-                    // Standard Routing Flow
-                    if (authMode === "admin" && authView === "admin-signup") {
-                      setShowPasswordCreate(true)
-                    } else if (authMode === "user" && authView === "user-signup") {
-                      setShowPasswordCreate(true)
-                    } else if (showForgotPassword) {
-                      setShowPasswordCreate(true)
-                    } else if (authMode === "admin" && authView === "login") {
-                      setIsNavigating(true)
-                      localStorage.setItem("mock_logged_in", "true")
-                      setTimeout(() => {
-                        router.push("/")
-                      }, 500)
-                    } else {
-                      // Covers generic User Login
-                      setIsNavigating(true)
-                      localStorage.setItem("mock_logged_in", "true")
-                      setTimeout(() => {
-                        router.push("/")
-                      }, 500)
-                    }
+                    setIsLoading(false);
                   }}
                 >
                   Verify OTP
@@ -858,5 +1157,7 @@ export default function LoginPage() {
         </div>
       )}
     </div>
+    <div id="recaptcha-container"></div>
+    </>
   )
 }

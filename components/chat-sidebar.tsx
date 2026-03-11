@@ -8,8 +8,9 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { useState } from "react"
 import type { ChatSession } from "@/app/page"
 import { cn } from "@/lib/utils"
-import { signOut } from "next-auth/react"
-import type { Session } from "next-auth"
+import { signOut } from 'firebase/auth';
+import { auth } from '@/lib/firebase';
+import { useRouter } from 'next/navigation';
 
 interface ChatSidebarProps {
   sessions: ChatSession[]
@@ -21,7 +22,7 @@ interface ChatSidebarProps {
   onRenameSession: (sessionId: string, newTitle: string) => void
   onDeleteSession: (sessionId: string) => void
   onToggleBookmark: (sessionId: string) => void
-  session: Session | null // Add session prop
+  session: { user: { id?: string; phone?: string | null; name?: string | null; email?: string | null; countryCode?: string } } | null
 }
 
 export function ChatSidebar({
@@ -39,6 +40,7 @@ export function ChatSidebar({
   const [renamingSessionId, setRenamingSessionId] = useState<string | null>(null)
   const [renameValue, setRenameValue] = useState("")
   const [openMenuId, setOpenMenuId] = useState<string | null>(null)
+  const router = useRouter()
 
   const handleRenameSubmit = (sessionId: string) => {
     if (renameValue.trim()) {
@@ -194,7 +196,7 @@ export function ChatSidebar({
               {session.user.name || session.user.email}
             </div>
           </div>
-          <Button onClick={() => signOut()} className="w-full" variant="secondary">
+          <Button onClick={() => signOut(auth).then(() => router.push('/login'))} className="w-full" variant="secondary">
             Sign out
           </Button>
         </div>

@@ -11,8 +11,9 @@ import { CallerModal } from "@/components/caller-modal"
 import { AppointmentModal } from "@/components/appointment-modal"
 import { WebhookConfig } from "@/components/webhook-config"
 import { ThemeToggle } from "@/components/theme-toggle"
-import { useSession } from "next-auth/react"
+import { useAuth } from '@/hooks/useAuth';
 import { useRouter } from "next/navigation"
+import SupabaseTest from "../src/SupabaseTest"
 
 export interface Message {
   id: string
@@ -81,7 +82,8 @@ export default function ChatPage() {
     return true // If we can't detect, assume it's valid and let the browser handle it
   }
 
-  const { data: session, status } = useSession()
+  const { user, loading: statusLoading } = useAuth()
+  const session = user ? { user: { id: (user as any).uid, phone: (user as any).phoneNumber, countryCode: '' } } : null;
   const router = useRouter()
 
   const createAndSelectNewSession = (): string => {
@@ -300,13 +302,10 @@ export default function ChatPage() {
   }, [sessions])
 
   useEffect(() => {
-    // MOCK AUTHENTICATION CHECK - [TODO: REMOVE WHEN SUPABASE IS CONNECTED]
-    const isMockLoggedIn = typeof window !== 'undefined' && localStorage.getItem('mock_logged_in') === 'true'
-    
-    if (status === "unauthenticated" && !isMockLoggedIn) {
+    if (!statusLoading && !user) {
       router.push("/login")
     }
-  }, [status, router])
+  }, [user, statusLoading, router])
 
   // Track scroll (window and/or ScrollArea viewport) to toggle Scroll-to-Top button
   useEffect(() => {
@@ -347,14 +346,11 @@ export default function ChatPage() {
     }
   }, [sessions, currentSessionId, isLoading])
 
-  if (status === "loading") {
+  if (statusLoading) {
     return <div>Loading authentication...</div> // Or a more sophisticated loading component
   }
 
-  // MOCK AUTHENTICATION CHECK - [TODO: REMOVE WHEN SUPABASE IS CONNECTED]
-  const isMockLoggedIn = typeof window !== 'undefined' && localStorage.getItem('mock_logged_in') === 'true'
-
-  if (status === "unauthenticated" && !isMockLoggedIn) {
+  if (!user) {
     return null // Will be redirected by useEffect
   }
 
@@ -910,6 +906,7 @@ export default function ChatPage() {
 
   return (
     <div className="flex h-screen bg-background">
+      <SupabaseTest />
       {/* Sidebar */}
       <ChatSidebar
         sessions={filteredSessions}
