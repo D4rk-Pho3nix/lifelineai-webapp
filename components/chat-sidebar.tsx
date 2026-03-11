@@ -3,13 +3,14 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { Plus, Search, MessageSquare, MoreHorizontal, Edit, Trash2, Bookmark } from "lucide-react"
+import { Plus, Search, MessageSquare, MoreHorizontal, Edit, Trash2, Bookmark, Compass } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { useState } from "react"
 import type { ChatSession } from "@/app/page"
 import { cn } from "@/lib/utils"
 import { signOut } from "next-auth/react"
 import type { Session } from "next-auth"
+import Link from "next/link"
 
 interface ChatSidebarProps {
   sessions: ChatSession[]
@@ -54,10 +55,7 @@ export function ChatSidebar({
   }
 
   return (
-<<<<<<< Updated upstream
-    <div className="w-64 bg-sidebar border-r border-sidebar-border flex flex-col fixed left-0 top-0 bottom-0 h-screen flex-shrink-0 z-20">
-=======
-    <div className="w-64 min-w-64 max-w-64 bg-sidebar border-r border-sidebar-border flex flex-col h-full flex-shrink-0 z-20 overflow-x-hidden">
+    <div className="w-64 bg-sidebar border-r border-sidebar-border flex flex-col fixed left-0 top-0 bottom-0 h-screen flex-shrink-0 z-20 overflow-x-hidden">
       {/* Discover Button */}
       <div className="pt-3 px-3">
         <Button
@@ -72,7 +70,6 @@ export function ChatSidebar({
         </Button>
       </div>
 
->>>>>>> Stashed changes
       {/* New Chat Button */}
       <div className="p-3">
         <Button
