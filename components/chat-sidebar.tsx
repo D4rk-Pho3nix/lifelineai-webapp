@@ -3,7 +3,8 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { Plus, Search, MessageSquare, MoreHorizontal, Edit, Trash2, Bookmark } from "lucide-react"
+import { Plus, Search, MessageSquare, MoreHorizontal, Edit, Trash2, Bookmark, Compass } from "lucide-react"
+import Link from "next/link"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { useState } from "react"
 import type { ChatSession } from "@/app/page"
@@ -55,6 +56,20 @@ export function ChatSidebar({
 
   return (
     <div className="w-64 bg-sidebar border-r border-sidebar-border flex flex-col fixed left-0 top-0 bottom-0 h-screen flex-shrink-0 z-20">
+      {/* Discover Button */}
+      <div className="pt-3 px-3">
+        <Button
+          asChild
+          className="w-full flex items-center gap-2 bg-sidebar-primary text-sidebar-primary-foreground hover:bg-sidebar-accent border border-sidebar-border text-sm font-medium"
+          variant="outline"
+        >
+          <Link href="/discover">
+            <Compass className="h-4 w-4" />
+            Discover
+          </Link>
+        </Button>
+      </div>
+
       {/* New Chat Button */}
       <div className="p-3">
         <Button

@@ -41,6 +41,7 @@ export default function ChatPage() {
   const [isAppointmentModalOpen, setIsAppointmentModalOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [showScrollTop, setShowScrollTop] = useState(false)
+  const [sessionResolved, setSessionResolved] = useState(false)
   const messagesContainerRef = useRef<HTMLDivElement | null>(null)
   const topOfChatRef = useRef<HTMLDivElement | null>(null)
 
@@ -300,10 +301,21 @@ export default function ChatPage() {
   }, [sessions])
 
   useEffect(() => {
-    if (status === "unauthenticated") {
+    if (status === "unauthenticated" && sessionResolved) {
       router.push("/login")
     }
-  }, [status, router])
+  }, [status, router, sessionResolved])
+
+  // Fix infinite loading with safe timeout fallback
+  useEffect(() => {
+    if (status !== "loading") {
+      setSessionResolved(true)
+    }
+    const timer = setTimeout(() => {
+      setSessionResolved(true)
+    }, 3000)
+    return () => clearTimeout(timer)
+  }, [status])
 
   // Track scroll (window and/or ScrollArea viewport) to toggle Scroll-to-Top button
   useEffect(() => {
@@ -344,11 +356,11 @@ export default function ChatPage() {
     }
   }, [sessions, currentSessionId, isLoading])
 
-  if (status === "loading") {
-    return <div>Loading authentication...</div> // Or a more sophisticated loading component
+  if (status === "loading" && !sessionResolved) {
+    return <div>Loading application...</div> 
   }
 
-  if (status === "unauthenticated") {
+  if (status === "unauthenticated" && !session) {
     return null // Will be redirected by useEffect
   }
 

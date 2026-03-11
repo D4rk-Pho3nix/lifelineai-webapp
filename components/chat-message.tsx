@@ -96,9 +96,31 @@ export function ChatMessage({ message }: ChatMessageProps) {
     } else {
       // Start new speech
       const utterance = new SpeechSynthesisUtterance(plainTextContent)
-      utterance.rate = 0.9
-      utterance.pitch = 1
-      utterance.volume = 0.8
+      
+      // Aim for a female, warm, supportive, and calm voice if available in the browser
+      const voices = window.speechSynthesis.getVoices()
+      const femaleVoices = voices.filter(v => 
+        v.name.includes("Female") || 
+        v.name.includes("Samantha") || 
+        v.name.includes("Victoria") ||
+        v.name.includes("Karen") ||
+        v.name.includes("Moira") ||
+        v.name.includes("Tessa") ||
+        v.name.includes("Zira") ||
+        v.name.includes("Fiona") ||
+        v.name.includes("Google UK English Female") ||
+        v.name.includes("Google US English") // Often female by default on many Android/Chrome
+      )
+
+      if (femaleVoices.length > 0) {
+        // Prefer a local voice to avoid delay, or a high-quality known one
+        const preferredVoice = femaleVoices.find(v => v.name.includes("Google UK English Female") || v.name.includes("Samantha")) || femaleVoices[0]
+        utterance.voice = preferredVoice
+      }
+      
+      utterance.rate = 0.95  // Slightly slower for a more soothing, calm pacing
+      utterance.pitch = 1.05 // Slightly higher pitch often sounds more gentle
+      utterance.volume = 0.8 // Maintain volume
 
       utterance.onstart = () => setIsSpeaking(true)
       utterance.onend = () => setIsSpeaking(false)

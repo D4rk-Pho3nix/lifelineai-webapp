@@ -7,6 +7,7 @@ import { AuthProvider } from "@/components/auth-provider"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Suspense } from "react"
 import "./globals.css"
+import "leaflet/dist/leaflet.css"
 
 export const metadata: Metadata = {
   title: "Lifeline AI",
