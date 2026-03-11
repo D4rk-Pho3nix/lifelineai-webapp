@@ -446,13 +446,6 @@ export default function LoginPage() {
 
                   {isFaculty === true && (
                     <>
-                      <div className="mb-[16px]">
-                        <label className="block text-[14px] font-medium text-white/90 mb-[6px]">
-                          Email ID <span className="text-red-500">*</span>
-                        </label>
-                        <input type="email" placeholder="eg : abc@gmail.com" className="w-full p-[12px] bg-[#1e1e1e] border border-white/10 text-white rounded-[8px] text-[14px] outline-none focus:border-[#04895f] transition-colors" value={email} onChange={(e) => setEmail(e.target.value)} />
-                      </div>
-
                       <div className="mb-[16px]" ref={dropdownRef}>
                       <label className="block text-[14px] font-medium text-white/90 mb-[6px]">
                         Institution <span className="text-red-500">*</span>
@@ -520,11 +513,19 @@ export default function LoginPage() {
                       </div>
                     </div>
 
-                      <div className="mb-[24px]">
-                        <label className="block text-[14px] font-medium text-white/90 mb-[6px]">
-                          Faculty ID <span className="text-white/50">(optional)</span>
-                        </label>
-                        <input type="text" placeholder="(optional)" className="w-full p-[12px] bg-[#1e1e1e] border border-white/10 text-white rounded-[8px] text-[14px] outline-none focus:border-[#04895f] transition-colors" value={facultyId} onChange={(e) => setFacultyId(e.target.value)} />
+                      <div className="flex gap-3 mb-[24px]">
+                        <div className="flex-1">
+                          <label className="block text-[14px] font-medium text-white/90 mb-[6px]">
+                            Email ID <span className="text-red-500">*</span>
+                          </label>
+                          <input type="email" placeholder="eg : abc@gmail.com" className="w-full p-[12px] bg-[#1e1e1e] border border-white/10 text-white rounded-[8px] text-[14px] outline-none focus:border-[#04895f] transition-colors" value={email} onChange={(e) => setEmail(e.target.value)} />
+                        </div>
+                        <div className="flex-1">
+                          <label className="block text-[14px] font-medium text-white/90 mb-[6px]">
+                            Faculty ID
+                          </label>
+                          <input type="text" placeholder="(optional)" className="w-full p-[12px] bg-[#1e1e1e] border border-white/10 text-white rounded-[8px] text-[14px] outline-none focus:border-[#04895f] transition-colors" value={facultyId} onChange={(e) => setFacultyId(e.target.value)} />
+                        </div>
                       </div>
                     </>
                   )}
@@ -677,7 +678,6 @@ export default function LoginPage() {
                   disabled={!phoneNumber}
                   onClick={() => {
                     // MOCK AUTHENTICATION [TODO: SUPABASE INTEGRATION]
-                    setShowForgotPassword(false)
                     setShowOTP(true)
                   }}
                 >
@@ -687,7 +687,7 @@ export default function LoginPage() {
             )}
 
             {/* OTP Interface */}
-            {showOTP && !showPasswordCreate && !showForgotPassword && (
+            {showOTP && !showPasswordCreate && (
               <div className="animate-fast-fade">
                 <h2 className="text-[20px] font-bold text-white mb-2 text-center">Verify OTP</h2>
                 <p className="text-white/60 text-[13px] text-center mb-6">Enter the 6-digit code sent to your phone</p>
@@ -744,6 +744,8 @@ export default function LoginPage() {
                       setShowPasswordCreate(true)
                     } else if (authMode === "user" && authView === "user-signup") {
                       setShowPasswordCreate(true)
+                    } else if (showForgotPassword) {
+                      setShowPasswordCreate(true)
                     } else if (authMode === "admin" && authView === "login") {
                       setIsNavigating(true)
                       localStorage.setItem("mock_logged_in", "true")
@@ -751,7 +753,7 @@ export default function LoginPage() {
                         router.push("/")
                       }, 500)
                     } else {
-                      // Covers generic User Login & Forgot Password completion overrides
+                      // Covers generic User Login
                       setIsNavigating(true)
                       localStorage.setItem("mock_logged_in", "true")
                       setTimeout(() => {
@@ -834,7 +836,14 @@ export default function LoginPage() {
                             setSignUpSuccess(false)
                             setNewPassword("")
                             setConfirmPassword("")
-                            router.push("/")
+                            
+                            if (showForgotPassword) {
+                              setShowForgotPassword(false)
+                              setPhoneNumber("") // Reset form
+                              // We just stay on the current login page since state is reset
+                            } else {
+                              router.push("/")
+                            }
                           }, 2000)
                         }}
                       >
