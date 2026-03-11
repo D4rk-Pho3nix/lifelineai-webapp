@@ -54,7 +54,25 @@ export function ChatSidebar({
   }
 
   return (
+<<<<<<< Updated upstream
     <div className="w-64 bg-sidebar border-r border-sidebar-border flex flex-col fixed left-0 top-0 bottom-0 h-screen flex-shrink-0 z-20">
+=======
+    <div className="w-64 min-w-64 max-w-64 bg-sidebar border-r border-sidebar-border flex flex-col h-full flex-shrink-0 z-20 overflow-x-hidden">
+      {/* Discover Button */}
+      <div className="pt-3 px-3">
+        <Button
+          asChild
+          className="w-full flex items-center gap-2 bg-sidebar-primary text-sidebar-primary-foreground hover:bg-sidebar-accent border border-sidebar-border text-sm font-medium"
+          variant="outline"
+        >
+          <Link href="/discover">
+            <Compass className="h-4 w-4" />
+            Discover
+          </Link>
+        </Button>
+      </div>
+
+>>>>>>> Stashed changes
       {/* New Chat Button */}
       <div className="p-3">
         <Button

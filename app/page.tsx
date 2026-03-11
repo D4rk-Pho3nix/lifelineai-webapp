@@ -919,7 +919,7 @@ export default function ChatPage() {
       />
 
       {/* Main Chat Area */}
-      <div className="flex-1 flex flex-col ml-64">
+      <div className="flex-1 flex flex-col overflow-hidden h-screen">
         {/* Top Bar */}
         <header className="border-b border-border bg-background px-6 py-3 flex items-center justify-between sticky top-0 z-30">
           <h1 className="text-lg font-medium text-foreground">Lifeline AI</h1>
