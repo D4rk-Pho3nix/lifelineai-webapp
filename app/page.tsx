@@ -300,7 +300,10 @@ export default function ChatPage() {
   }, [sessions])
 
   useEffect(() => {
-    if (status === "unauthenticated") {
+    // MOCK AUTHENTICATION CHECK - [TODO: REMOVE WHEN SUPABASE IS CONNECTED]
+    const isMockLoggedIn = typeof window !== 'undefined' && localStorage.getItem('mock_logged_in') === 'true'
+    
+    if (status === "unauthenticated" && !isMockLoggedIn) {
       router.push("/login")
     }
   }, [status, router])
@@ -348,7 +351,10 @@ export default function ChatPage() {
     return <div>Loading authentication...</div> // Or a more sophisticated loading component
   }
 
-  if (status === "unauthenticated") {
+  // MOCK AUTHENTICATION CHECK - [TODO: REMOVE WHEN SUPABASE IS CONNECTED]
+  const isMockLoggedIn = typeof window !== 'undefined' && localStorage.getItem('mock_logged_in') === 'true'
+
+  if (status === "unauthenticated" && !isMockLoggedIn) {
     return null // Will be redirected by useEffect
   }
 

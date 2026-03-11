@@ -1,0 +1,3772 @@
+[
+  {
+    "name": "Anna University",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "IIT Madras",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Madras Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "College of Engineering Guindy",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Madras Medical College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Presidency College Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Loyola College Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Stella Maris College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Women's Christian College Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Ethiraj College for Women",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Madras Christian College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Vels University",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "SRM Institute of Science and Technology Kattankulathur",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Saveetha Institute of Medical and Technical Sciences",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Sathyabama Institute of Science and Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Hindustan Institute of Technology and Science",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Jeppiaar Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Meenakshi Sundararajan Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Panimalar Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Panimalar Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Sri Venkateswara College of Engineering Sriperumbudur",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Rajalakshmi Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Rajalakshmi Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Jerusalem College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "R.M.K. Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "R.M.K. College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Velammal Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Velammal Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Jaya Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Jaya Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Sri Sairam Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Sri Sairam Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Misrimal Navajee Munoth Jain Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Agni College of Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Easwari Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Sri Muthukumaran Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "St. Joseph's College of Engineering Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "St. Joseph's Institute of Technology Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Valliammai Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Prathyusha Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "KCG College of Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Arignar Anna Institute of Science and Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Tagore Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Saveetha Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Madha Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Madha Institute of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Dhaanish Ahmed College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Aalim Muhammed Salegh College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "B.S. Abdur Rahman Crescent Institute of Science and Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Sindhi College of Arts and Science",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Sriram College of Arts and Science",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Guru Nanak College Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "D.G. Vaishnav College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Pachaiyappa's College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "New College Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Quaid-e-Milleth Government College for Women",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Government Arts College Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Dr. Ambedkar Government Arts College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Meenakshi College for Women",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Meenakshi Academy of Higher Education and Research",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Sri Ramachandra Institute of Higher Education",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Chettinad Academy of Research and Education",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Stanley Medical College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Kilpauk Medical College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Madras Veterinary College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Tamil Nadu Dr. Ambedkar Law University",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "The Tamil Nadu Dr. M.G.R. Medical University",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Mohamed Sathak College of Arts and Science",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Patrician College of Arts and Science",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "SRM Valliammai Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Bharath Institute of Higher Education and Research",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Shree Motilal Kanhaiyalal Fomra Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Apollo Engineering College Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Chennai Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "St. Peter's Engineering College Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Dhanalakshmi College of Engineering Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Tamil Nadu Veterinary and Animal Sciences University",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Tamil Nadu Physical Education and Sports University",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Tamil Nadu Teachers Education University",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Tamil Nadu Open University",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Kings Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "T.J.S. Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Sri Lakshmi Ammal Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Lord's Institute of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "SMK Fomra Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "GRT Institute of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Tiruvallur"
+  },
+  {
+    "name": "Panimalar Arts and Science College for Women",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Sathyabama Dental College and Hospital",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Sri Venkateshwara Dental College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Sri Ramachandra Dental College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Saveetha Dental College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Asan Memorial College of Arts and Science",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Vivekananda College Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Sree Balaji Medical College and Hospital",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Sree Balaji Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Jeppiaar Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Gojan School of Business and Technology",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Annai Veilankanni's College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Mohamed Sathak Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Surya Engineering College Chennai",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Latha Mathavan Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "St. Peter's College of Engineering and Technology Avadi",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "Sri Sairam College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Chennai"
+  },
+  {
+    "name": "PSG College of Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "PSG College of Arts and Science",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Coimbatore Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Government College of Technology Coimbatore",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Amrita Vishwa Vidyapeetham Coimbatore",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Karpagam Academy of Higher Education",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Karpagam College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Karpagam Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Sri Ramakrishna Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Sri Ramakrishna Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Rathinam College of Arts and Science",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Rathinam Technical Campus",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "SNS College of Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "SNS College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "KPR Institute of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "KPR College of Arts Science and Research",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Sri Krishna College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Sri Krishna College of Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Sri Krishna Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Kongu Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Kongu Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Nirmala College for Women",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Coimbatore Medical College and Hospital",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "PSG Institute of Medical Sciences and Research",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Kovai Medical Center and Hospital",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Avinashilingam Institute for Home Science and Higher Education for Women",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Dr. N.G.P. Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "NGP Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Hindusthan College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Hindusthan College of Arts and Science",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Hindusthan Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "PPG Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "CMS College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Kumaraguru College of Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Kumaraguru College of Liberal Arts and Science",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Bharathiar University",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Government Arts College Coimbatore",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Sri Eshwar College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Dr. SNS Rajalakshmi College of Arts and Science",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "EASA College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Park College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Park College of Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Arulmigu Meenakshi Amman College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Nandha Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Nandha Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "VSB College of Engineering Technical Campus",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Coimbatore Institute of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "United Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Adithya Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Akshaya College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Akshaya Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "CSI College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Tamil Nadu Agricultural University",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Karunya Institute of Technology and Sciences",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Tamilnadu College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Surya College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Nehru College of Management",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Sri GVG Visalakshi College for Women",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "PSG Polytechnic College",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Coimbatore Medical College",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Shri Andal Alagar College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "SRG Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Sree Narayana Guru Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "R.V.S. College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "R.V.S. Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Sri Ramanas College of Arts and Science for Women",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Excel Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Selvam College of Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Dhirajlal Gandhi College of Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "Bannari Amman Institute of Technology Sathyamangalam",
+    "state": "Tamil Nadu",
+    "district": "Erode"
+  },
+  {
+    "name": "National Institute of Technology Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Bharathidasan University",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Bishop Heber College",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Jamal Mohamed College",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "St. Joseph's College Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Government Arts College Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Urumu Dhanalakshmi College",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Cauvery College for Women",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Holy Cross College Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Saranathan College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Trichy Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "K. Ramakrishnan College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "K. Ramakrishnan College of Technology",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Arasu Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Indra Ganesan College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Shrimati Indira Gandhi College",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Anna University Regional Campus Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "PRIST University",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Periyar Maniammai Institute of Science and Technology",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "M.A.M. College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "M.A.M. College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Srinivasan College of Arts and Science",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Dhanalakshmi Srinivasan College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Dhanalakshmi Srinivasan Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Dhanalakshmi Srinivasan College of Arts and Science for Women",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Raja College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Mookambigai College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Pavendar Bharathidasan College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Pavendar Bharathidasan Institute of Information Technology",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Francis Xavier Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "National College Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "M.I.E.T. Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Government College of Engineering Srirangam",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Mahalakshmi Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Maria College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "SRM TRP Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Nadar Saraswathi College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "V.S.B. Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Jim College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Latha Mathavan Engineering College Madurai",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "name": "Madurai Kamaraj University",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Thiagarajar College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "American College Madurai",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Lady Doak College",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Fatima College",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "The Madura College",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Government Arts College Madurai",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Arul Anandar College",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Thiagarajar College",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Sourashtra College",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Sri Meenakshi Government Arts College for Women",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Madurai Medical College",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "K.L.N. College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "K.L.N. College of Information Technology",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Sethu Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Velammal College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "M.Kumarasamy College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Kamaraj College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "NPR College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Pandian Saraswathi Yadav Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "A.R. Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Sree Sowdambika College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "P.S.R. Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "P.S.R. Rengasamy College of Engineering for Women",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Arumugam Pillai Seethai Ammal College",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Syed Ammal Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Mother Teresa Women's University",
+    "state": "Tamil Nadu",
+    "district": "Dindigul"
+  },
+  {
+    "name": "PSNA College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Dindigul"
+  },
+  {
+    "name": "Kurinji College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Dindigul"
+  },
+  {
+    "name": "A.R.J. College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Dindigul"
+  },
+  {
+    "name": "Dindigul Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Dindigul"
+  },
+  {
+    "name": "Gandhigram Rural Institute",
+    "state": "Tamil Nadu",
+    "district": "Dindigul"
+  },
+  {
+    "name": "Arulmigu Palaniandavar Arts College for Women",
+    "state": "Tamil Nadu",
+    "district": "Dindigul"
+  },
+  {
+    "name": "Mepco Schlenk Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Virudhunagar"
+  },
+  {
+    "name": "Sri Kaliswari College",
+    "state": "Tamil Nadu",
+    "district": "Virudhunagar"
+  },
+  {
+    "name": "Latha Mathavan Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "V.P.M.M. Engineering College for Women",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Sri Vidya Mandir Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Yadava College",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Mangayarkarasi College of Arts and Science",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Jayaraj Annapackiam College",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Madurai Institute of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Madurai"
+  },
+  {
+    "name": "Vellore Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Christian Medical College Vellore",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Thiruvalluvar University",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Government Medical College Vellore",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Auxilium College Vellore",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Government Arts College Vellore",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Voorhees College Vellore",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "VMKV Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Sri Venkateshwaraa College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Priyadarshini Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Grace College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Thanthai Periyar Government Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Sri Venkateswara College of Engineering Vellore",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "SBM College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "DKT College of Arts and Science for Women",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Sri Sakthi Amma College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Sri Ranganathar Institute of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Sri Venkateswara Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Nandha College of Technology",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "National Engineering College Kovilpatti",
+    "state": "Tamil Nadu",
+    "district": "Thoothukudi"
+  },
+  {
+    "name": "Sree Narayana Guru College of Commerce Vellore",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Sri Ranganathar Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Adhiparasakthi College of Arts and Science Vellore",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Thiruvalluvar College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Vellore"
+  },
+  {
+    "name": "Government College of Engineering Salem",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Salem College",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Vinayaka Missions Research Foundation",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Vinayaka Mission's Kirupananda Variyar Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "AVS Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "AVS Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Angel College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Mahendra Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Mahendra Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Sona College of Technology",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Sona Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Paavai Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Paavai College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "SKR Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Narasu's Sarathy Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Sri Shanmugha College of Engineering Sankari",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Mahendra College of Engineering Salem",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Periyar University",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Sri Vasavi College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "P.A. College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Annai Mathammal Sheela Engineering College Namakkal",
+    "state": "Tamil Nadu",
+    "district": "Namakkal"
+  },
+  {
+    "name": "Gnanamani College of Technology",
+    "state": "Tamil Nadu",
+    "district": "Namakkal"
+  },
+  {
+    "name": "Gnanamani College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Namakkal"
+  },
+  {
+    "name": "Gnanamani Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Namakkal"
+  },
+  {
+    "name": "Selvam College of Arts and Science",
+    "state": "Tamil Nadu",
+    "district": "Namakkal"
+  },
+  {
+    "name": "AVC College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Nagapattinam"
+  },
+  {
+    "name": "Government College of Engineering Erode",
+    "state": "Tamil Nadu",
+    "district": "Erode"
+  },
+  {
+    "name": "Erode Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Erode"
+  },
+  {
+    "name": "Arjun College of Technology",
+    "state": "Tamil Nadu",
+    "district": "Erode"
+  },
+  {
+    "name": "Vivekanandha College of Arts and Sciences for Women",
+    "state": "Tamil Nadu",
+    "district": "Erode"
+  },
+  {
+    "name": "Vivekanandha College of Engineering for Women",
+    "state": "Tamil Nadu",
+    "district": "Erode"
+  },
+  {
+    "name": "Knowledge Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Erode"
+  },
+  {
+    "name": "Erode Sengunthar Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Erode"
+  },
+  {
+    "name": "P.K.R. Arts College for Women",
+    "state": "Tamil Nadu",
+    "district": "Erode"
+  },
+  {
+    "name": "Sri Vasavi College Erode",
+    "state": "Tamil Nadu",
+    "district": "Erode"
+  },
+  {
+    "name": "Nehru Institute of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Erode"
+  },
+  {
+    "name": "Nehru Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Erode"
+  },
+  {
+    "name": "Nehru Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Erode"
+  },
+  {
+    "name": "Gobi Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Erode"
+  },
+  {
+    "name": "Velalar College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Erode"
+  },
+  {
+    "name": "Nandha Engineering College Erode",
+    "state": "Tamil Nadu",
+    "district": "Erode"
+  },
+  {
+    "name": "Excel College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Erode"
+  },
+  {
+    "name": "Manonmaniam Sundaranar University",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "Tirunelveli Medical College",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "St. Xavier's College Tirunelveli",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "Rani Anna Government College for Women",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "Sri Paramakalyani College",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "National Engineering College Kovilpatti",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "Amrita College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "V.O.C. College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "Arunachala College of Engineering for Women",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "Ponjesly College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "Noorul Islam Centre for Higher Education",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "Scad College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "SCAD Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "Infant Jesus College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "Sri Vivekananda College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "C.S.I. Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "Einstein College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "VV College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "Lekshmipuram College of Arts and Science",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "Annamalai University",
+    "state": "Tamil Nadu",
+    "district": "Cuddalore"
+  },
+  {
+    "name": "Adhiparasakthi College of Arts and Science",
+    "state": "Tamil Nadu",
+    "district": "Cuddalore"
+  },
+  {
+    "name": "Adhiparasakthi Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Cuddalore"
+  },
+  {
+    "name": "Government Thirumagal Mills College",
+    "state": "Tamil Nadu",
+    "district": "Cuddalore"
+  },
+  {
+    "name": "Idhaya Engineering College for Women",
+    "state": "Tamil Nadu",
+    "district": "Cuddalore"
+  },
+  {
+    "name": "IFET College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Villupuram"
+  },
+  {
+    "name": "Sri Aravindar Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Villupuram"
+  },
+  {
+    "name": "Mailam Engineering College Tindivanam",
+    "state": "Tamil Nadu",
+    "district": "Villupuram"
+  },
+  {
+    "name": "Alagappa University",
+    "state": "Tamil Nadu",
+    "district": "Sivaganga"
+  },
+  {
+    "name": "Alagappa Chettiar Government College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Sivaganga"
+  },
+  {
+    "name": "Vickram College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Sivaganga"
+  },
+  {
+    "name": "Kalasalingam Academy of Research and Education",
+    "state": "Tamil Nadu",
+    "district": "Virudhunagar"
+  },
+  {
+    "name": "AAA College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Virudhunagar"
+  },
+  {
+    "name": "Renganayagi Varatharaj College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Virudhunagar"
+  },
+  {
+    "name": "Sri Vidya College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Virudhunagar"
+  },
+  {
+    "name": "Mepco Schlenk Engineering College Sivakasi",
+    "state": "Tamil Nadu",
+    "district": "Virudhunagar"
+  },
+  {
+    "name": "Sethu Institute of Technology Virudhunagar",
+    "state": "Tamil Nadu",
+    "district": "Virudhunagar"
+  },
+  {
+    "name": "Thanjavur Medical College",
+    "state": "Tamil Nadu",
+    "district": "Thanjavur"
+  },
+  {
+    "name": "Shanmugha Arts Science Technology and Research Academy",
+    "state": "Tamil Nadu",
+    "district": "Thanjavur"
+  },
+  {
+    "name": "Rajah Serfoji Government College",
+    "state": "Tamil Nadu",
+    "district": "Thanjavur"
+  },
+  {
+    "name": "Arumugam Pillai Seethai Ammal College Papanasam",
+    "state": "Tamil Nadu",
+    "district": "Thanjavur"
+  },
+  {
+    "name": "Annai College of Arts and Science Thanjavur",
+    "state": "Tamil Nadu",
+    "district": "Thanjavur"
+  },
+  {
+    "name": "Ponnaiyah Ramajayam Institute of Science and Technology",
+    "state": "Tamil Nadu",
+    "district": "Thanjavur"
+  },
+  {
+    "name": "Government College of Engineering Thanjavur",
+    "state": "Tamil Nadu",
+    "district": "Thanjavur"
+  },
+  {
+    "name": "Annai Veilankanni's Arts and Science College Thanjavur",
+    "state": "Tamil Nadu",
+    "district": "Thanjavur"
+  },
+  {
+    "name": "Thiruvalluvar College of Engineering and Technology Papanasam",
+    "state": "Tamil Nadu",
+    "district": "Thanjavur"
+  },
+  {
+    "name": "Scott Christian College Nagercoil",
+    "state": "Tamil Nadu",
+    "district": "Kanyakumari"
+  },
+  {
+    "name": "St. Xavier's Catholic College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Kanyakumari"
+  },
+  {
+    "name": "Cape Institute of Technology",
+    "state": "Tamil Nadu",
+    "district": "Kanyakumari"
+  },
+  {
+    "name": "College of Engineering Nagercoil",
+    "state": "Tamil Nadu",
+    "district": "Kanyakumari"
+  },
+  {
+    "name": "Sun College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Kanyakumari"
+  },
+  {
+    "name": "Annai College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Kanyakumari"
+  },
+  {
+    "name": "Rohini College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Kanyakumari"
+  },
+  {
+    "name": "V.O.C. College Thoothukudi",
+    "state": "Tamil Nadu",
+    "district": "Thoothukudi"
+  },
+  {
+    "name": "National Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Thoothukudi"
+  },
+  {
+    "name": "Ilayaraja College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Thoothukudi"
+  },
+  {
+    "name": "Kamaraj College Thoothukudi",
+    "state": "Tamil Nadu",
+    "district": "Thoothukudi"
+  },
+  {
+    "name": "The Tamil Nadu Dr. J. Jayalalithaa Fisheries University",
+    "state": "Tamil Nadu",
+    "district": "Nagapattinam"
+  },
+  {
+    "name": "Sri Manakula Vinayagar Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Puducherry"
+  },
+  {
+    "name": "Shanmughanathar Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Pudukkottai"
+  },
+  {
+    "name": "Government Engineering College Ariyalur",
+    "state": "Tamil Nadu",
+    "district": "Ariyalur"
+  },
+  {
+    "name": "Government College of Engineering Bargur",
+    "state": "Tamil Nadu",
+    "district": "Krishnagiri"
+  },
+  {
+    "name": "Jawaharlal Nehru Engineering College Dharapuram",
+    "state": "Tamil Nadu",
+    "district": "Tiruppur"
+  },
+  {
+    "name": "Jay Shriram Group of Institutions",
+    "state": "Tamil Nadu",
+    "district": "Tiruppur"
+  },
+  {
+    "name": "Government College of Engineering Kallikuppam",
+    "state": "Tamil Nadu",
+    "district": "Tiruppur"
+  },
+  {
+    "name": "Government College of Engineering Dharmapuri",
+    "state": "Tamil Nadu",
+    "district": "Dharmapuri"
+  },
+  {
+    "name": "Government College of Engineering Nagapattinam",
+    "state": "Tamil Nadu",
+    "district": "Nagapattinam"
+  },
+  {
+    "name": "Theni Kammavar Sangam College of Technology",
+    "state": "Tamil Nadu",
+    "district": "Theni"
+  },
+  {
+    "name": "Bharath Niketan Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Theni"
+  },
+  {
+    "name": "M. Kumarasamy College of Engineering Karur",
+    "state": "Tamil Nadu",
+    "district": "Karur"
+  },
+  {
+    "name": "ARM College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Kanchipuram"
+  },
+  {
+    "name": "Sri Sivasubramaniya Nadar College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Kanchipuram"
+  },
+  {
+    "name": "Adhiparasakthi College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Kanchipuram"
+  },
+  {
+    "name": "Adhiparasakthi Engineering College Melmaruvathur",
+    "state": "Tamil Nadu",
+    "district": "Kanchipuram"
+  },
+  {
+    "name": "Sri Sai Ram College of Engineering Anekal",
+    "state": "Tamil Nadu",
+    "district": "Kanchipuram"
+  },
+  {
+    "name": "Kings College of Engineering",
+    "state": "Tamil Nadu",
+    "district": "Pudukkottai"
+  },
+  {
+    "name": "Infant Jesus Arts and Science College Tirunelveli",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "Punitha Ayyanar Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Dindigul"
+  },
+  {
+    "name": "Government College of Engineering Tirunelveli",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli"
+  },
+  {
+    "name": "Syed Ammal Arts and Science College Ramanathapuram",
+    "state": "Tamil Nadu",
+    "district": "Ramanathapuram"
+  },
+  {
+    "name": "Government Arts and Science College Paramakudi",
+    "state": "Tamil Nadu",
+    "district": "Ramanathapuram"
+  },
+  {
+    "name": "Sri Aravindar Arts and Science College",
+    "state": "Tamil Nadu",
+    "district": "Villupuram"
+  },
+  {
+    "name": "Krishnasamy College of Engineering and Technology",
+    "state": "Tamil Nadu",
+    "district": "Cuddalore"
+  },
+  {
+    "name": "Sri Adi Chunchanagiri Women's College Salem",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Shree Venkateshwara Hi-Tech Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Salem"
+  },
+  {
+    "name": "Annai Mathammal Sheela Engineering College",
+    "state": "Tamil Nadu",
+    "district": "Namakkal"
+  },
+  {
+    "name": "PSNA College of Engineering and Technology Dindigul",
+    "state": "Tamil Nadu",
+    "district": "Dindigul"
+  },
+  {
+    "name": "IIT Delhi",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "IIT Bombay",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "KalaignarKarunanidhi Institute Of Technology",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore"
+  },
+  {
+    "name": "IIT Kanpur",
+    "state": "Uttar Pradesh",
+    "district": "Kanpur"
+  },
+  {
+    "name": "IIT Kharagpur",
+    "state": "West Bengal",
+    "district": "Kharagpur"
+  },
+  {
+    "name": "IIT Roorkee",
+    "state": "Uttarakhand",
+    "district": "Roorkee"
+  },
+  {
+    "name": "IIT Guwahati",
+    "state": "Assam",
+    "district": "Guwahati"
+  },
+  {
+    "name": "IIT Hyderabad",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "IIT Gandhinagar",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "IIT Bhubaneswar",
+    "state": "Odisha",
+    "district": "Bhubaneswar"
+  },
+  {
+    "name": "IIT Jodhpur",
+    "state": "Rajasthan",
+    "district": "Jodhpur"
+  },
+  {
+    "name": "IIT Patna",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "IIT Ropar",
+    "state": "Punjab",
+    "district": "Rupnagar"
+  },
+  {
+    "name": "IIT Indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "IIT Mandi",
+    "state": "Himachal Pradesh",
+    "district": "Mandi"
+  },
+  {
+    "name": "IIT Varanasi (BHU)",
+    "state": "Uttar Pradesh",
+    "district": "Varanasi"
+  },
+  {
+    "name": "IIT Tirupati",
+    "state": "Andhra Pradesh",
+    "district": "Tirupati"
+  },
+  {
+    "name": "IIT Palakkad",
+    "state": "Kerala",
+    "district": "Palakkad"
+  },
+  {
+    "name": "IIT Dharwad",
+    "state": "Karnataka",
+    "district": "Dharwad"
+  },
+  {
+    "name": "IIT Jammu",
+    "state": "Jammu & Kashmir",
+    "district": "Jammu"
+  },
+  {
+    "name": "IIT Bhilai",
+    "state": "Chhattisgarh",
+    "district": "Durg"
+  },
+  {
+    "name": "IIT Goa",
+    "state": "Goa",
+    "district": "North Goa"
+  },
+  {
+    "name": "IISc Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "IISER Pune",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "IISER Kolkata",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "IISER Mohali",
+    "state": "Punjab",
+    "district": "Mohali"
+  },
+  {
+    "name": "IISER Bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "IISER Thiruvananthapuram",
+    "state": "Kerala",
+    "district": "Thiruvananthapuram"
+  },
+  {
+    "name": "IISER Tirupati",
+    "state": "Andhra Pradesh",
+    "district": "Tirupati"
+  },
+  {
+    "name": "IISER Berhampur",
+    "state": "Odisha",
+    "district": "Berhampur"
+  },
+  {
+    "name": "NIT Warangal",
+    "state": "Telangana",
+    "district": "Warangal"
+  },
+  {
+    "name": "NIT Calicut",
+    "state": "Kerala",
+    "district": "Kozhikode"
+  },
+  {
+    "name": "NIT Surathkal",
+    "state": "Karnataka",
+    "district": "Mangaluru"
+  },
+  {
+    "name": "NIT Rourkela",
+    "state": "Odisha",
+    "district": "Rourkela"
+  },
+  {
+    "name": "NIT Durgapur",
+    "state": "West Bengal",
+    "district": "Durgapur"
+  },
+  {
+    "name": "NIT Allahabad (MNNIT)",
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj"
+  },
+  {
+    "name": "NIT Jaipur (MNIT)",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "NIT Bhopal (MANIT)",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "NIT Surat (SVNIT)",
+    "state": "Gujarat",
+    "district": "Surat"
+  },
+  {
+    "name": "NIT Hamirpur",
+    "state": "Himachal Pradesh",
+    "district": "Hamirpur"
+  },
+  {
+    "name": "NIT Kurukshetra",
+    "state": "Haryana",
+    "district": "Kurukshetra"
+  },
+  {
+    "name": "NIT Patna",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "NIT Silchar",
+    "state": "Assam",
+    "district": "Silchar"
+  },
+  {
+    "name": "NIT Agartala",
+    "state": "Tripura",
+    "district": "Agartala"
+  },
+  {
+    "name": "NIT Jalandhar",
+    "state": "Punjab",
+    "district": "Jalandhar"
+  },
+  {
+    "name": "NIT Nagpur (VNIT)",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "NIT Raipur",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "NIT Meghalaya",
+    "state": "Meghalaya",
+    "district": "Shillong"
+  },
+  {
+    "name": "NIT Manipur",
+    "state": "Manipur",
+    "district": "Imphal"
+  },
+  {
+    "name": "NIT Sikkim",
+    "state": "Sikkim",
+    "district": "Gangtok"
+  },
+  {
+    "name": "Delhi Technological University",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Netaji Subhas University of Technology",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Indraprastha Institute of Information Technology Delhi",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Jamia Millia Islamia",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "University of Delhi",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Jawaharlal Nehru University",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Guru Gobind Singh Indraprastha University",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Ambedkar Institute of Advanced Communication Technologies and Research",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Bhagwan Parshuram Institute of Technology",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Maharaja Agrasen Institute of Technology",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Vivekananda Institute of Professional Studies",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Shaheed Sukhdev College of Business Studies",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Deen Dayal Upadhyaya College",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Sri Venkateswara College Delhi",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Miranda House",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Lady Shri Ram College for Women",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "St. Stephen's College Delhi",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Hindu College Delhi",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Hansraj College",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Kirori Mal College",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Ramjas College",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Shri Ram College of Commerce",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Delhi College of Engineering",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Indira Gandhi Delhi Technical University for Women",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "All India Institute of Medical Sciences Delhi",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "Maulana Azad Medical College",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "IIT Delhi (Indian Institute of Technology Delhi)",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "IIM Ahmedabad",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "IIM Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "IIM Calcutta",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "IIM Lucknow",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "IIM Kozhikode",
+    "state": "Kerala",
+    "district": "Kozhikode"
+  },
+  {
+    "name": "IIM Indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "IIM Shillong",
+    "state": "Meghalaya",
+    "district": "Shillong"
+  },
+  {
+    "name": "IIM Rohtak",
+    "state": "Haryana",
+    "district": "Rohtak"
+  },
+  {
+    "name": "IIM Ranchi",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "IIM Raipur",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "IIM Kashipur",
+    "state": "Uttarakhand",
+    "district": "Udham Singh Nagar"
+  },
+  {
+    "name": "IIM Udaipur",
+    "state": "Rajasthan",
+    "district": "Udaipur"
+  },
+  {
+    "name": "IIM Nagpur",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "IIM Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "district": "Visakhapatnam"
+  },
+  {
+    "name": "IIM Amritsar",
+    "state": "Punjab",
+    "district": "Amritsar"
+  },
+  {
+    "name": "IIM Bodhgaya",
+    "state": "Bihar",
+    "district": "Gaya"
+  },
+  {
+    "name": "IIM Sambalpur",
+    "state": "Odisha",
+    "district": "Sambalpur"
+  },
+  {
+    "name": "IIM Sirmaur",
+    "state": "Himachal Pradesh",
+    "district": "Sirmaur"
+  },
+  {
+    "name": "IIM Jammu",
+    "state": "Jammu & Kashmir",
+    "district": "Jammu"
+  },
+  {
+    "name": "University of Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "University of Pune (Savitribai Phule Pune University)",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "College of Engineering Pune",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Symbiosis Institute of Technology",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Symbiosis International University",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "MIT College of Engineering Pune",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Vishwakarma Institute of Technology",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Bharati Vidyapeeth College of Engineering",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Pune Institute of Computer Technology",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Indira College of Engineering and Management",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Cummins College of Engineering for Women",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Armed Forces Medical College Pune",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "BITS Pilani Goa Campus",
+    "state": "Goa",
+    "district": "North Goa"
+  },
+  {
+    "name": "Institute of Chemical Technology Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "VJTI Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Sardar Patel College of Engineering Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "K.J. Somaiya College of Engineering",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Thadomal Shahani Engineering College",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "D.J. Sanghvi College of Engineering",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Dwarkadas J. Sanghvi College of Engineering",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Fr. Conceicao Rodrigues College of Engineering",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Terna Engineering College",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Xavier Institute of Engineering Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Grant Medical College Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Seth GS Medical College",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "All India Institute of Medical Sciences Nagpur",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "Nagpur University (Rashtrasant Tukadoji Maharaj Nagpur University)",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "Visvesvaraya National Institute of Technology Nagpur",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "Walchand College of Engineering Sangli",
+    "state": "Maharashtra",
+    "district": "Sangli"
+  },
+  {
+    "name": "Shri Guru Gobind Singhji Institute of Engineering and Technology",
+    "state": "Maharashtra",
+    "district": "Nanded"
+  },
+  {
+    "name": "Dr. Babasaheb Ambedkar Technological University",
+    "state": "Maharashtra",
+    "district": "Raigad"
+  },
+  {
+    "name": "Indian Institute of Science Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "BITS Pilani",
+    "state": "Rajasthan",
+    "district": "Jhunjhunu"
+  },
+  {
+    "name": "Manipal Institute of Technology",
+    "state": "Karnataka",
+    "district": "Udupi"
+  },
+  {
+    "name": "Manipal Academy of Higher Education",
+    "state": "Karnataka",
+    "district": "Udupi"
+  },
+  {
+    "name": "RV College of Engineering",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "BMS College of Engineering",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "PES University",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "MS Ramaiah Institute of Technology",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "Dayananda Sagar College of Engineering",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "JSS Science and Technology University",
+    "state": "Karnataka",
+    "district": "Mysuru"
+  },
+  {
+    "name": "Bangalore Institute of Technology",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "New Horizon College of Engineering",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "Nitte Meenakshi Institute of Technology",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "SJB Institute of Technology",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "East West Institute of Technology",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "University Visvesvaraya College of Engineering",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "Visvesvaraya Technological University",
+    "state": "Karnataka",
+    "district": "Belagavi"
+  },
+  {
+    "name": "Mysore University (University of Mysore)",
+    "state": "Karnataka",
+    "district": "Mysuru"
+  },
+  {
+    "name": "NIE Institute of Technology Mysuru",
+    "state": "Karnataka",
+    "district": "Mysuru"
+  },
+  {
+    "name": "Malnad College of Engineering",
+    "state": "Karnataka",
+    "district": "Hassan"
+  },
+  {
+    "name": "SDM College of Engineering and Technology",
+    "state": "Karnataka",
+    "district": "Dakshina Kannada"
+  },
+  {
+    "name": "NMAM Institute of Technology",
+    "state": "Karnataka",
+    "district": "Udupi"
+  },
+  {
+    "name": "St. Joseph's University Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "Christ University Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "Jain University Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "Ramaiah Medical College",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "Kasturba Medical College Manipal",
+    "state": "Karnataka",
+    "district": "Udupi"
+  },
+  {
+    "name": "St. John's Medical College Bangalore",
+    "state": "Karnataka",
+    "district": "Bengaluru"
+  },
+  {
+    "name": "Osmania University",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "University of Hyderabad",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "JNTU Hyderabad",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "Chaitanya Bharathi Institute of Technology",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "VNR Vignana Jyothi Institute of Engineering and Technology",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "Vasavi College of Engineering",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "Gokaraju Rangaraju Institute of Engineering and Technology",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "CVR College of Engineering",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "Mahatma Gandhi Institute of Technology",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "BITS Pilani Hyderabad Campus",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "International Institute of Information Technology Hyderabad",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "Osmania Medical College",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "Gandhi Medical College Hyderabad",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "Nizam's Institute of Medical Sciences",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "Andhra University",
+    "state": "Andhra Pradesh",
+    "district": "Visakhapatnam"
+  },
+  {
+    "name": "JNTU Kakinada",
+    "state": "Andhra Pradesh",
+    "district": "Kakinada"
+  },
+  {
+    "name": "GITAM University",
+    "state": "Andhra Pradesh",
+    "district": "Visakhapatnam"
+  },
+  {
+    "name": "Acharya Nagarjuna University",
+    "state": "Andhra Pradesh",
+    "district": "Guntur"
+  },
+  {
+    "name": "Sri Venkateswara University",
+    "state": "Andhra Pradesh",
+    "district": "Tirupati"
+  },
+  {
+    "name": "Vignan's Foundation for Science Technology and Research",
+    "state": "Andhra Pradesh",
+    "district": "Guntur"
+  },
+  {
+    "name": "Sri Venkateswara College of Engineering and Technology Chittoor",
+    "state": "Andhra Pradesh",
+    "district": "Chittoor"
+  },
+  {
+    "name": "Koneru Lakshmaiah Education Foundation",
+    "state": "Andhra Pradesh",
+    "district": "Guntur"
+  },
+  {
+    "name": "SRM University Amaravati",
+    "state": "Andhra Pradesh",
+    "district": "Guntur"
+  },
+  {
+    "name": "All India Institute of Medical Sciences Mangalagiri",
+    "state": "Andhra Pradesh",
+    "district": "Guntur"
+  },
+  {
+    "name": "Kerala University (University of Kerala)",
+    "state": "Kerala",
+    "district": "Thiruvananthapuram"
+  },
+  {
+    "name": "Cochin University of Science and Technology",
+    "state": "Kerala",
+    "district": "Ernakulam"
+  },
+  {
+    "name": "University of Calicut",
+    "state": "Kerala",
+    "district": "Malappuram"
+  },
+  {
+    "name": "Mahatma Gandhi University Kerala",
+    "state": "Kerala",
+    "district": "Kottayam"
+  },
+  {
+    "name": "College of Engineering Trivandrum",
+    "state": "Kerala",
+    "district": "Thiruvananthapuram"
+  },
+  {
+    "name": "TKM College of Engineering",
+    "state": "Kerala",
+    "district": "Kollam"
+  },
+  {
+    "name": "Government Engineering College Thrissur",
+    "state": "Kerala",
+    "district": "Thrissur"
+  },
+  {
+    "name": "LBS College of Engineering",
+    "state": "Kerala",
+    "district": "Kasaragod"
+  },
+  {
+    "name": "Rajiv Gandhi Institute of Technology",
+    "state": "Kerala",
+    "district": "Ernakulam"
+  },
+  {
+    "name": "Model Engineering College Thrikkakara",
+    "state": "Kerala",
+    "district": "Ernakulam"
+  },
+  {
+    "name": "College of Engineering Chengannur",
+    "state": "Kerala",
+    "district": "Alappuzha"
+  },
+  {
+    "name": "Mar Baselios College of Engineering and Technology",
+    "state": "Kerala",
+    "district": "Thiruvananthapuram"
+  },
+  {
+    "name": "Sree Chitra Tirunal Institute for Medical Sciences and Technology",
+    "state": "Kerala",
+    "district": "Thiruvananthapuram"
+  },
+  {
+    "name": "Government Medical College Thiruvananthapuram",
+    "state": "Kerala",
+    "district": "Thiruvananthapuram"
+  },
+  {
+    "name": "Amrita School of Engineering Coimbatore",
+    "state": "Kerala",
+    "district": "Ernakulam"
+  },
+  {
+    "name": "Jadavpur University",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "Calcutta University (University of Calcutta)",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "Presidency University Kolkata",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "Calcutta Medical College",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "Bengal Engineering and Science University",
+    "state": "West Bengal",
+    "district": "Howrah"
+  },
+  {
+    "name": "Heritage Institute of Technology",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "Techno India University",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "Sister Nivedita University",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "Kalyani Government Engineering College",
+    "state": "West Bengal",
+    "district": "Nadia"
+  },
+  {
+    "name": "Meghnad Saha Institute of Technology",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "Institute of Engineering and Management Kolkata",
+    "state": "West Bengal",
+    "district": "Kolkata"
+  },
+  {
+    "name": "IIEST Shibpur",
+    "state": "West Bengal",
+    "district": "Howrah"
+  },
+  {
+    "name": "University of Rajasthan",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "BITS Pilani Main Campus",
+    "state": "Rajasthan",
+    "district": "Jhunjhunu"
+  },
+  {
+    "name": "Malaviya National Institute of Technology Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Banasthali Vidyapith",
+    "state": "Rajasthan",
+    "district": "Tonk"
+  },
+  {
+    "name": "Rajasthan Technical University",
+    "state": "Rajasthan",
+    "district": "Kota"
+  },
+  {
+    "name": "LNM Institute of Information Technology",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Poornima University",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Global Institute of Technology Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "IIS University Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Jaipur National University",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "SMS Medical College Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur"
+  },
+  {
+    "name": "Government Medical College Kota",
+    "state": "Rajasthan",
+    "district": "Kota"
+  },
+  {
+    "name": "Gujarat University",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "Nirma University",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "Dhirubhai Ambani Institute of Information and Communication Technology",
+    "state": "Gujarat",
+    "district": "Gandhinagar"
+  },
+  {
+    "name": "Sardar Vallabhbhai National Institute of Technology Surat",
+    "state": "Gujarat",
+    "district": "Surat"
+  },
+  {
+    "name": "Charotar University of Science and Technology",
+    "state": "Gujarat",
+    "district": "Anand"
+  },
+  {
+    "name": "Institute of Infrastructure Technology Research and Management",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "LD College of Engineering",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "BVM Engineering College",
+    "state": "Gujarat",
+    "district": "Anand"
+  },
+  {
+    "name": "Gujarat Technological University",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "B.K. School of Business Management",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "B.J. Medical College Ahmedabad",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "GMERS Medical College Sola",
+    "state": "Gujarat",
+    "district": "Ahmedabad"
+  },
+  {
+    "name": "Panjab University",
+    "state": "Punjab",
+    "district": "Chandigarh"
+  },
+  {
+    "name": "Thapar Institute of Engineering and Technology",
+    "state": "Punjab",
+    "district": "Patiala"
+  },
+  {
+    "name": "Chandigarh University",
+    "state": "Punjab",
+    "district": "Mohali"
+  },
+  {
+    "name": "Punjab Engineering College Chandigarh",
+    "state": "Punjab",
+    "district": "Chandigarh"
+  },
+  {
+    "name": "Lovely Professional University",
+    "state": "Punjab",
+    "district": "Jalandhar"
+  },
+  {
+    "name": "Chitkara University Punjab",
+    "state": "Punjab",
+    "district": "Patiala"
+  },
+  {
+    "name": "Guru Nanak Dev University",
+    "state": "Punjab",
+    "district": "Amritsar"
+  },
+  {
+    "name": "DAV College Chandigarh",
+    "state": "Punjab",
+    "district": "Chandigarh"
+  },
+  {
+    "name": "Post Graduate Institute of Medical Education and Research",
+    "state": "Punjab",
+    "district": "Chandigarh"
+  },
+  {
+    "name": "Government Medical College Amritsar",
+    "state": "Punjab",
+    "district": "Amritsar"
+  },
+  {
+    "name": "University of Lucknow",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "Aligarh Muslim University",
+    "state": "Uttar Pradesh",
+    "district": "Aligarh"
+  },
+  {
+    "name": "Banaras Hindu University",
+    "state": "Uttar Pradesh",
+    "district": "Varanasi"
+  },
+  {
+    "name": "Amity University Noida",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "Harcourt Butler Technical University",
+    "state": "Uttar Pradesh",
+    "district": "Kanpur"
+  },
+  {
+    "name": "Madan Mohan Malaviya University of Technology",
+    "state": "Uttar Pradesh",
+    "district": "Gorakhpur"
+  },
+  {
+    "name": "JSS Academy of Technical Education Noida",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "Galgotias University",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "Shiv Nadar University",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "Bennett University Greater Noida",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "Jaypee University of Information Technology",
+    "state": "Himachal Pradesh",
+    "district": "Solan"
+  },
+  {
+    "name": "Jaypee Institute of Information Technology Noida",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar"
+  },
+  {
+    "name": "King George's Medical University",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "SGPGI Lucknow",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "MANIT Bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "SGSITS Indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "Devi Ahilya Vishwavidyalaya",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "Medi-Caps University",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "SAGE University Indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore"
+  },
+  {
+    "name": "Barkatullah University",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "AIIMS Bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Gandhi Medical College Bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Birla Institute of Technology Mesra",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "National Institute of Technology Jamshedpur",
+    "state": "Jharkhand",
+    "district": "Jamshedpur"
+  },
+  {
+    "name": "Ranchi University",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "AIIMS Patna",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "Patna Medical College",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "Patna University",
+    "state": "Bihar",
+    "district": "Patna"
+  },
+  {
+    "name": "Gauhati University",
+    "state": "Assam",
+    "district": "Guwahati"
+  },
+  {
+    "name": "Assam Engineering College",
+    "state": "Assam",
+    "district": "Guwahati"
+  },
+  {
+    "name": "Jorhat Engineering College",
+    "state": "Assam",
+    "district": "Jorhat"
+  },
+  {
+    "name": "Tezpur University",
+    "state": "Assam",
+    "district": "Sonitpur"
+  },
+  {
+    "name": "Cotton University",
+    "state": "Assam",
+    "district": "Guwahati"
+  },
+  {
+    "name": "North Eastern Hill University",
+    "state": "Meghalaya",
+    "district": "Shillong"
+  },
+  {
+    "name": "Mizoram University",
+    "state": "Mizoram",
+    "district": "Aizawl"
+  },
+  {
+    "name": "Nagaland University",
+    "state": "Nagaland",
+    "district": "Kohima"
+  },
+  {
+    "name": "Manipur University",
+    "state": "Manipur",
+    "district": "Imphal"
+  },
+  {
+    "name": "Tripura University",
+    "state": "Tripura",
+    "district": "Agartala"
+  },
+  {
+    "name": "Sikkim Manipal University",
+    "state": "Sikkim",
+    "district": "Gangtok"
+  },
+  {
+    "name": "Central Agricultural University",
+    "state": "Manipur",
+    "district": "Imphal"
+  },
+  {
+    "name": "AIIMS New Delhi",
+    "state": "Delhi",
+    "district": "New Delhi"
+  },
+  {
+    "name": "AIIMS Bhubaneswar",
+    "state": "Odisha",
+    "district": "Bhubaneswar"
+  },
+  {
+    "name": "AIIMS Jodhpur",
+    "state": "Rajasthan",
+    "district": "Jodhpur"
+  },
+  {
+    "name": "AIIMS Rishikesh",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "AIIMS Raipur",
+    "state": "Chhattisgarh",
+    "district": "Raipur"
+  },
+  {
+    "name": "AIIMS Kalyani",
+    "state": "West Bengal",
+    "district": "Nadia"
+  },
+  {
+    "name": "AIIMS Gorakhpur",
+    "state": "Uttar Pradesh",
+    "district": "Gorakhpur"
+  },
+  {
+    "name": "Utkal University",
+    "state": "Odisha",
+    "district": "Bhubaneswar"
+  },
+  {
+    "name": "Odisha University of Technology and Research",
+    "state": "Odisha",
+    "district": "Bhubaneswar"
+  },
+  {
+    "name": "Silicon Institute of Technology",
+    "state": "Odisha",
+    "district": "Bhubaneswar"
+  },
+  {
+    "name": "KIIT Deemed to be University",
+    "state": "Odisha",
+    "district": "Bhubaneswar"
+  },
+  {
+    "name": "SOA University (Siksha O Anusandhan)",
+    "state": "Odisha",
+    "district": "Bhubaneswar"
+  },
+  {
+    "name": "Veer Surendra Sai University of Technology",
+    "state": "Odisha",
+    "district": "Sambalpur"
+  },
+  {
+    "name": "SCB Medical College Cuttack",
+    "state": "Odisha",
+    "district": "Cuttack"
+  },
+  {
+    "name": "Kurukshetra University",
+    "state": "Haryana",
+    "district": "Kurukshetra"
+  },
+  {
+    "name": "Maharshi Dayanand University",
+    "state": "Haryana",
+    "district": "Rohtak"
+  },
+  {
+    "name": "YMCA University of Science and Technology",
+    "state": "Haryana",
+    "district": "Faridabad"
+  },
+  {
+    "name": "Deenbandhu Chhotu Ram University of Science and Technology",
+    "state": "Haryana",
+    "district": "Sonipat"
+  },
+  {
+    "name": "Manav Rachna University",
+    "state": "Haryana",
+    "district": "Faridabad"
+  },
+  {
+    "name": "SRM University Sonepat",
+    "state": "Haryana",
+    "district": "Sonipat"
+  },
+  {
+    "name": "Ashoka University",
+    "state": "Haryana",
+    "district": "Sonipat"
+  },
+  {
+    "name": "O.P. Jindal Global University",
+    "state": "Haryana",
+    "district": "Sonipat"
+  },
+  {
+    "name": "Himachal Pradesh University",
+    "state": "Himachal Pradesh",
+    "district": "Shimla"
+  },
+  {
+    "name": "Jaypee University of Information Technology Waknaghat",
+    "state": "Himachal Pradesh",
+    "district": "Solan"
+  },
+  {
+    "name": "Shoolini University",
+    "state": "Himachal Pradesh",
+    "district": "Solan"
+  },
+  {
+    "name": "University of Jammu",
+    "state": "Jammu & Kashmir",
+    "district": "Jammu"
+  },
+  {
+    "name": "University of Kashmir",
+    "state": "Jammu & Kashmir",
+    "district": "Srinagar"
+  },
+  {
+    "name": "NIT Srinagar",
+    "state": "Jammu & Kashmir",
+    "district": "Srinagar"
+  },
+  {
+    "name": "Goa University",
+    "state": "Goa",
+    "district": "North Goa"
+  },
+  {
+    "name": "Goa College of Engineering",
+    "state": "Goa",
+    "district": "North Goa"
+  },
+  {
+    "name": "Don Bosco College of Engineering",
+    "state": "Goa",
+    "district": "South Goa"
+  },
+  {
+    "name": "Uttarakhand Technical University",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "Graphic Era University",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "DIT University",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "Dehradun Institute of Technology",
+    "state": "Uttarakhand",
+    "district": "Dehradun"
+  },
+  {
+    "name": "Chhattisgarh Swami Vivekanand Technical University",
+    "state": "Chhattisgarh",
+    "district": "Bhilai"
+  },
+  {
+    "name": "Rungta College of Engineering and Technology",
+    "state": "Chhattisgarh",
+    "district": "Bhilai"
+  },
+  {
+    "name": "Bhilai Institute of Technology",
+    "state": "Chhattisgarh",
+    "district": "Durg"
+  },
+  {
+    "name": "Pondicherry University",
+    "state": "Puducherry",
+    "district": "Puducherry"
+  },
+  {
+    "name": "Pondicherry Engineering College",
+    "state": "Puducherry",
+    "district": "Puducherry"
+  },
+  {
+    "name": "Jawaharlal Institute of Postgraduate Medical Education and Research",
+    "state": "Puducherry",
+    "district": "Puducherry"
+  },
+  {
+    "name": "Srinivas University",
+    "state": "Karnataka",
+    "district": "Mangaluru"
+  },
+  {
+    "name": "Yenepoya University",
+    "state": "Karnataka",
+    "district": "Mangaluru"
+  },
+  {
+    "name": "Sahyadri College of Engineering and Management",
+    "state": "Karnataka",
+    "district": "Mangaluru"
+  },
+  {
+    "name": "NITTE University",
+    "state": "Karnataka",
+    "district": "Mangaluru"
+  },
+  {
+    "name": "Mangalore University",
+    "state": "Karnataka",
+    "district": "Mangaluru"
+  },
+  {
+    "name": "SRM University Andhra Pradesh",
+    "state": "Andhra Pradesh",
+    "district": "Nellore"
+  },
+  {
+    "name": "Woxsen University",
+    "state": "Telangana",
+    "district": "Medak"
+  },
+  {
+    "name": "Mahindra University",
+    "state": "Telangana",
+    "district": "Hyderabad"
+  },
+  {
+    "name": "Homi Bhabha National Institute",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Tata Institute of Fundamental Research",
+    "state": "Maharashtra",
+    "district": "Mumbai"
+  },
+  {
+    "name": "Indian Institute of Information Technology Allahabad",
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj"
+  },
+  {
+    "name": "Indian Institute of Information Technology Gwalior",
+    "state": "Madhya Pradesh",
+    "district": "Gwalior"
+  },
+  {
+    "name": "Indian Institute of Information Technology Jabalpur",
+    "state": "Madhya Pradesh",
+    "district": "Jabalpur"
+  },
+  {
+    "name": "Indian Institute of Information Technology Design and Manufacturing Kurnool",
+    "state": "Andhra Pradesh",
+    "district": "Kurnool"
+  },
+  {
+    "name": "Indian Institute of Information Technology Lucknow",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow"
+  },
+  {
+    "name": "Indian Institute of Information Technology Nagpur",
+    "state": "Maharashtra",
+    "district": "Nagpur"
+  },
+  {
+    "name": "Indian Institute of Information Technology Pune",
+    "state": "Maharashtra",
+    "district": "Pune"
+  },
+  {
+    "name": "Indian Institute of Information Technology Vadodara",
+    "state": "Gujarat",
+    "district": "Vadodara"
+  },
+  {
+    "name": "Indian Institute of Information Technology Ranchi",
+    "state": "Jharkhand",
+    "district": "Ranchi"
+  },
+  {
+    "name": "Indian Institute of Information Technology Surat",
+    "state": "Gujarat",
+    "district": "Surat"
+  },
+  {
+    "name": "Indian Institute of Information Technology Bhagalpur",
+    "state": "Bihar",
+    "district": "Bhagalpur"
+  },
+  {
+    "name": "Indian Institute of Information Technology Bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal"
+  },
+  {
+    "name": "Indian Institute of Information Technology Kalyani",
+    "state": "West Bengal",
+    "district": "Nadia"
+  }
+]
