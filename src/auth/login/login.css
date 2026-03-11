@@ -1,0 +1,203 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Modern AI SaaS Pure Black Geometric Background Elements */
+.login-bg-shape-1 {
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  /* Pure black outline */
+  top: -250px;
+  left: -250px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.login-bg-shape-2 {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  border: 4px solid rgba(0, 0, 0, 0.08);
+  /* Faint bold pure black arc */
+  bottom: -250px;
+  right: -250px;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.02) 0%, rgba(255, 255, 255, 0) 60%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.login-bg-arc-1 {
+  position: absolute;
+  width: 1300px;
+  height: 1300px;
+  border-radius: 50%;
+  border: 1px solid rgb(0, 0, 0);
+  /* Pure black mid line */
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.login-card {
+  width: 520px;
+  border-radius: 14px;
+  padding: 40px;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-shadow: 0 12px 48px -12px rgba(0, 0, 0, 0.06);
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 640px) {
+  .login-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 32px 24px;
+  }
+}
+
+.login-input {
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+  height: 44px;
+  padding: 0 16px;
+  font-size: 14px;
+  color: #111111;
+  background: white;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #111111;
+  box-shadow: 0 0 0 1px #111111;
+}
+
+.login-btn {
+  background-color: #000000;
+  color: #FFFFFF;
+  height: 44px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #1a1a1a;
+}
+
+.login-btn:disabled {
+  background-color: #999999;
+  cursor: not-allowed;
+}
+
+.otp-box {
+  width: 48px;
+  height: 56px;
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111111;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.otp-box:focus {
+  outline: none;
+  border-color: #111111;
+  box-shadow: 0 0 0 1px #111111;
+}
+
+/* Modal Animations */
+.modal-overlay {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.modal-content {
+  animation: scaleIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Global Override for Phone Input Country Code */
+.country-code-selector,
+.phone-input-country {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+}
+
+.country-code-selector>span,
+.phone-input-country>span {
+  color: #FFFFFF !important;
+}
+
+.country-code-selector svg,
+.phone-input-country svg {
+  color: #FFFFFF !important;
+  opacity: 1 !important;
+}
+
+/* Cinematic Page Mount Animation (Slow Slide-Up + Fade) */
+.page-transition-enter {
+  animation: cinematicSlideUpFade 1000ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+  /* Start hidden */
+}
+
+@keyframes cinematicSlideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(80px) scale(0.97);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}

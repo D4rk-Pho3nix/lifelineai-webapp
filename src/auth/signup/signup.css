@@ -1,0 +1,130 @@
+/* Augments existing login styles with dark atmospheric design */
+
+.signup-bg-shape-1 {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 0.4);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
+    top: -200px;
+    left: -200px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.signup-bg-shape-2 {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    border: 1px dashed rgba(0, 0, 0, 0.6);
+    bottom: -150px;
+    right: -150px;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.08) 0%, rgba(255, 255, 255, 0) 60%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.signup-bg-arc-1 {
+    position: absolute;
+    width: 1500px;
+    height: 1400px;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 0.955);
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.signup-card-container {
+    padding-top: 100px;
+    /* offset for navbar and ensure space for large form */
+    padding-bottom: 40px;
+}
+
+/* Gender Trigger Specific Overrides */
+.signup-gender-trigger[data-state="open"] svg,
+.signup-gender-trigger svg {
+    /* Ensure icon matches text color */
+    opacity: 0.7;
+}
+
+.signup-gender-trigger.bg-black svg {
+    color: #ffffff !important;
+}
+
+/* Strict Black Styling for Dropdown Options */
+.signup-dropdown-content {
+    background-color: #ffffff !important;
+    border: 1px solid #e5e5e5;
+}
+
+.signup-dropdown-content [role="option"] {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+    cursor: pointer;
+}
+
+.signup-dropdown-content [role="option"]:hover,
+.signup-dropdown-content [role="option"][data-highlighted] {
+    background-color: #f3f4f6 !important;
+    /* Light neutral gray */
+    color: #000000 !important;
+}
+
+/* Success Modal Tick Animation */
+.success-tick-circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke: #16a34a;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.success-tick-path {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.success-checkmark {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #16a34a;
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+    box-shadow: inset 0px 0px 0px #16a34a;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #dcfce7;
+    }
+}
+
+@keyframes scale {
+
+    0%,
+    100% {
+        transform: none;
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}

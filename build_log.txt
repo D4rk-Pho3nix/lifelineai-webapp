@@ -1,0 +1,46 @@
+﻿
+> my-v0-project@0.1.0 build E:\lifelineai-project\lifelineai-webapp
+> next build
+
+  Γû▓ Next.js 14.2.16
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully
+   Skipping validation of types
+   Skipping linting
+   Collecting page data ...
+Job store initialized
+Job store initialized
+Job store initialized
+Job store initialized
+Job store initialized
+Job store initialized
+   Generating static pages (0/10) ...
+Job store initialized
+Job store initialized
+   Generating static pages (2/10) 
+Job store initialized
+Created new job: 1773139417956-2iubs2
+Total jobs after creation: 1
+Created test job: 1773139417956-2iubs2
+updateJob called with: 1773139417956-2iubs2 update: [ 'status', 'responseType', 'responseBinaryBase64', 'responseText' ]
+Existing job found: true
+Job updated successfully
+getJob called with: 1773139417956-2iubs2
+Job found: true
+Total jobs in store: 1
+All job IDs: [ '1773139417956-2iubs2' ]
+=== JOB STORE DEBUG ===
+Total jobs: 1
+Job 1773139417956-2iubs2: {
+  status: 'completed',
+  hasAudioData: true,
+  responseType: 'audio/mpeg',
+  createdAt: '2026-03-10T10:43:37.956Z',
+  updatedAt: '2026-03-10T10:43:37.956Z'
+}
+=== END DEBUG ===
+   Generating static pages (4/10) 
+   Generating static pages (7/10) 
+ Γ£ô Generating static pages (10/10)
+ΓÇëELIFECYCLEΓÇë Command failed with exit code 1.
