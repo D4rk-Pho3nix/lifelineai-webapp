@@ -40,11 +40,41 @@ export default function LoginPage() {
   const [showDropdown, setShowDropdown] = useState(false)
   const [isSearching, setIsSearching] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
+  
+  const [showCountryDropdown, setShowCountryDropdown] = useState(false)
+  const countryDropdownRef = useRef<HTMLDivElement>(null)
+  
+  const [showForgotCountryDropdown, setShowForgotCountryDropdown] = useState(false)
+  const forgotCountryDropdownRef = useRef<HTMLDivElement>(null)
+
+  const COUNTRY_CODES = [
+    { code: "+91", label: "IN (+91)" },
+    { code: "+1", label: "US (+1)" },
+    { code: "+44", label: "UK (+44)" },
+    { code: "+61", label: "AU (+61)" },
+    { code: "+49", label: "DE (+49)" },
+    { code: "+33", label: "FR (+33)" },
+    { code: "+81", label: "JP (+81)" },
+    { code: "+86", label: "CN (+86)" },
+    { code: "+55", label: "BR (+55)" },
+    { code: "+7", label: "RU (+7)" },
+    { code: "+27", label: "ZA (+27)" },
+    { code: "+82", label: "KR (+82)" },
+    { code: "+39", label: "IT (+39)" },
+    { code: "+34", label: "ES (+34)" },
+    { code: "+31", label: "NL (+31)" }
+  ];
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setShowDropdown(false)
+      }
+      if (countryDropdownRef.current && !countryDropdownRef.current.contains(event.target as Node)) {
+        setShowCountryDropdown(false)
+      }
+      if (forgotCountryDropdownRef.current && !forgotCountryDropdownRef.current.contains(event.target as Node)) {
+        setShowForgotCountryDropdown(false)
       }
     }
     document.addEventListener("mousedown", handleClickOutside)
@@ -251,41 +281,29 @@ export default function LoginPage() {
                   Phone Number <span className="text-red-500">*</span>
                 </label>
                 <div className="flex gap-[10px]">
-                  <div className="relative">
-                    <select
-                      className="appearance-none bg-[#1e1e1e] text-white py-[12px] pl-[14px] pr-[32px] rounded-[8px] border border-white/10 text-[14px] outline-none cursor-pointer h-full focus:border-[#04895f] transition-colors"
-                      value={countryCode}
-                      onChange={(e) => setCountryCode(e.target.value)}
+                  <div className="relative" ref={countryDropdownRef}>
+                    <div 
+                      className="bg-[#1e1e1e] text-white py-[12px] pl-[14px] pr-[32px] rounded-[8px] border border-white/10 text-[14px] cursor-pointer h-full flex items-center hover:border-[#04895f] transition-colors min-w-[100px]"
+                      onClick={() => setShowCountryDropdown(!showCountryDropdown)}
                     >
-                      <option value="+91">IN (+91)</option>
-                      <option value="+1">US (+1)</option>
-                      <option value="+44">UK (+44)</option>
-                      <option value="+61">AU (+61)</option>
-                      <option value="+49">DE (+49)</option>
-                      <option value="+33">FR (+33)</option>
-                      <option value="+81">JP (+81)</option>
-                      <option value="+86">CN (+86)</option>
-                      <option value="+55">BR (+55)</option>
-                      <option value="+7">RU (+7)</option>
-                      <option value="+27">ZA (+27)</option>
-                      <option value="+82">KR (+82)</option>
-                      <option value="+39">IT (+39)</option>
-                      <option value="+34">ES (+34)</option>
-                      <option value="+31">NL (+31)</option>
-                      <option value="+41">CH (+41)</option>
-                      <option value="+46">SE (+46)</option>
-                      <option value="+65">SG (+65)</option>
-                      <option value="+60">MY (+60)</option>
-                      <option value="+62">ID (+62)</option>
-                      <option value="+66">TH (+66)</option>
-                      <option value="+84">VN (+84)</option>
-                      <option value="+63">PH (+63)</option>
-                      <option value="+971">AE (+971)</option>
-                      <option value="+966">SA (+966)</option>
-                      <option value="+92">PK (+92)</option>
-                      <option value="+880">BD (+880)</option>
-                    </select>
-                    <ChevronDown className="absolute right-[10px] top-1/2 -translate-y-1/2 w-4 h-4 text-white/50 pointer-events-none" />
+                      {COUNTRY_CODES.find(c => c.code === countryCode)?.label || countryCode}
+                      <ChevronDown className={`absolute right-[10px] top-1/2 -translate-y-1/2 w-4 h-4 text-white/50 transition-transform duration-300 ${showCountryDropdown ? 'rotate-180' : ''}`} />
+                    </div>
+                    
+                    <div className={`absolute z-20 w-[140px] left-0 bg-[#2d2d2d] border border-white/10 rounded-lg mt-2 max-h-60 overflow-y-auto shadow-xl transition-all duration-300 origin-top-left ${showCountryDropdown ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
+                      {COUNTRY_CODES.map((country) => (
+                        <div
+                          key={country.code}
+                          className="px-4 py-3 hover:bg-[#04895f] hover:text-white cursor-pointer transition-colors border-b border-white/5 last:border-0 text-[13px]"
+                          onClick={() => {
+                            setCountryCode(country.code)
+                            setShowCountryDropdown(false)
+                          }}
+                        >
+                          {country.label}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                   <input
                     type="tel"
@@ -619,41 +637,29 @@ export default function LoginPage() {
                     Phone Number
                   </label>
                   <div className="flex gap-[10px]">
-                    <div className="relative">
-                      <select
-                        className="appearance-none bg-[#1e1e1e] text-white py-[12px] pl-[14px] pr-[32px] rounded-[8px] border border-white/10 text-[14px] outline-none cursor-pointer h-full focus:border-[#04895f] transition-colors"
-                        value={countryCode}
-                        onChange={(e) => setCountryCode(e.target.value)}
+                    <div className="relative" ref={forgotCountryDropdownRef}>
+                      <div 
+                        className="bg-[#1e1e1e] text-white py-[12px] pl-[14px] pr-[32px] rounded-[8px] border border-white/10 text-[14px] cursor-pointer h-full flex items-center hover:border-[#04895f] transition-colors min-w-[100px]"
+                        onClick={() => setShowForgotCountryDropdown(!showForgotCountryDropdown)}
                       >
-                        <option value="+91">IN (+91)</option>
-                        <option value="+1">US (+1)</option>
-                        <option value="+44">UK (+44)</option>
-                        <option value="+61">AU (+61)</option>
-                        <option value="+49">DE (+49)</option>
-                        <option value="+33">FR (+33)</option>
-                        <option value="+81">JP (+81)</option>
-                        <option value="+86">CN (+86)</option>
-                        <option value="+55">BR (+55)</option>
-                        <option value="+7">RU (+7)</option>
-                        <option value="+27">ZA (+27)</option>
-                        <option value="+82">KR (+82)</option>
-                        <option value="+39">IT (+39)</option>
-                        <option value="+34">ES (+34)</option>
-                        <option value="+31">NL (+31)</option>
-                        <option value="+41">CH (+41)</option>
-                        <option value="+46">SE (+46)</option>
-                        <option value="+65">SG (+65)</option>
-                        <option value="+60">MY (+60)</option>
-                        <option value="+62">ID (+62)</option>
-                        <option value="+66">TH (+66)</option>
-                        <option value="+84">VN (+84)</option>
-                        <option value="+63">PH (+63)</option>
-                        <option value="+971">AE (+971)</option>
-                        <option value="+966">SA (+966)</option>
-                        <option value="+92">PK (+92)</option>
-                        <option value="+880">BD (+880)</option>
-                      </select>
-                      <ChevronDown className="absolute right-[10px] top-1/2 -translate-y-1/2 w-4 h-4 text-white/50 pointer-events-none" />
+                        {COUNTRY_CODES.find(c => c.code === countryCode)?.label || countryCode}
+                        <ChevronDown className={`absolute right-[10px] top-1/2 -translate-y-1/2 w-4 h-4 text-white/50 transition-transform duration-300 ${showForgotCountryDropdown ? 'rotate-180' : ''}`} />
+                      </div>
+                      
+                      <div className={`absolute z-20 w-[140px] left-0 bg-[#2d2d2d] border border-white/10 rounded-lg mt-2 max-h-60 overflow-y-auto shadow-xl transition-all duration-300 origin-top-left ${showForgotCountryDropdown ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
+                        {COUNTRY_CODES.map((country) => (
+                          <div
+                            key={country.code}
+                            className="px-4 py-3 hover:bg-[#04895f] hover:text-white cursor-pointer transition-colors border-b border-white/5 last:border-0 text-[13px]"
+                            onClick={() => {
+                              setCountryCode(country.code)
+                              setShowForgotCountryDropdown(false)
+                            }}
+                          >
+                            {country.label}
+                          </div>
+                        ))}
+                      </div>
                     </div>
                     <input
                       type="tel"
