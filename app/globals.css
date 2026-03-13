@@ -1,9 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  /* ── Lifeline Admin Design System ── */
+  --lifeline-base:        #0f1117;
+  --lifeline-surface:     #1a1d24;
+  --lifeline-elevated:    #232530;
+  --lifeline-border:      #2d3139;
+  --lifeline-accent:      #04895f;
+  --lifeline-accentHover: #056b4a;
+  --lifeline-textPrimary: #ffffff;
+  --lifeline-textMuted:   #9ca3af;
+  --lifeline-tier1:       #16a34a;
+  --lifeline-tier2:       #d97706;
+  --lifeline-tier3:       #b91c1c;
+  --lifeline-tier1bg:     #052e16;
+  --lifeline-tier2bg:     #431407;
+  --lifeline-tier3bg:     #450a0a;
+
   /* Updated to exact ChatGPT colors - clean whites and grays */
   --background: #ffffff; /* Pure white background like ChatGPT */
   --foreground: #2d2d2d; /* Dark gray for main text */
@@ -76,8 +93,24 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
+  --font-sans: 'Inter', var(--font-geist-sans);
+  --font-inter: 'Inter', sans-serif;
   --font-mono: var(--font-geist-mono);
+  /* Lifeline color mappings */
+  --color-lifeline-base:        var(--lifeline-base);
+  --color-lifeline-surface:     var(--lifeline-surface);
+  --color-lifeline-elevated:    var(--lifeline-elevated);
+  --color-lifeline-border:      var(--lifeline-border);
+  --color-lifeline-accent:      var(--lifeline-accent);
+  --color-lifeline-accentHover: var(--lifeline-accentHover);
+  --color-lifeline-textPrimary: var(--lifeline-textPrimary);
+  --color-lifeline-textMuted:   var(--lifeline-textMuted);
+  --color-lifeline-tier1:       var(--lifeline-tier1);
+  --color-lifeline-tier2:       var(--lifeline-tier2);
+  --color-lifeline-tier3:       var(--lifeline-tier3);
+  --color-lifeline-tier1bg:     var(--lifeline-tier1bg);
+  --color-lifeline-tier2bg:     var(--lifeline-tier2bg);
+  --color-lifeline-tier3bg:     var(--lifeline-tier3bg);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -124,3 +157,26 @@
     @apply bg-background text-foreground font-sans;
   }
 }
+
+/* ── Custom Scrollbar ── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: #0f1117; }
+::-webkit-scrollbar-thumb { background: #04895f; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #056b4a; }
+
+/* ── Tier III Pulse Animation ── */
+@keyframes tier3-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(185, 28, 28, 0.3); }
+  50%       { box-shadow: 0 0 0 6px rgba(185, 28, 28, 0); }
+}
+.animate-tier3-pulse { animation: tier3-pulse 2s ease-in-out infinite; }
+
+/* ── Tooltip Fade ── */
+@keyframes tooltip-fade {
+  0%   { opacity: 0; transform: translateY(-4px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-tooltip-fade { animation: tooltip-fade 0.15s ease-out forwards; }
+
+/* ── Admin font override ── */
+.admin-layout { font-family: 'Inter', sans-serif; }
