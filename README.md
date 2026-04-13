@@ -1,3 +1,3 @@
 # lifelineai-webapp
 
-This is a tutorial for solomon
+webapp for lifeline ai 
